@@ -1,0 +1,125 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+/* ---- Header section --- */
+.header{
+    display: flex;
+    background: white;
+    margin: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_tittle{
+    display: flex;
+    color: black;
+    padding: 0px 0px 0px 20px;
+}
+
+.itemlink{
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.headerlink_register{
+padding-right: 15px ;
+}
+
+.flexbox {
+    display: flex;
+    margin: 10px;
+    background-color: white;
+    gap: 20px;
+}
+
+.flex-item_profile {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.flex-item{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 20px;
+}
+
+.div_profileimg {
+    max-width: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    height: auto;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.business{
+    background: white;
+    width: 600px;
+    margin-left: 10px;
+    padding: 0px 0px 200px 50px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.business{
+    flex-direction: column;
+    gap: 200px;
+}
+
+.mybusiness {
+    display: flex;
+    margin: 10px;
+    background-color: white;
+    gap: 20px;
+
+}
+.business{
+    width: 90%;
+    margin: 0;
+}
+
+.business_img {
+    width: 100%;
+    border: 1px black solid;
+    display: flex;
+    gap: 20px;
+}
+
+.footer{
+    display: flex;
+    height: 100px;
+    background: white;
+    margin: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+select{
+    display: block;
+}
