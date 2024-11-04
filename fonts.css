@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "HoltwoodOneSC-Regular";
+    src: url("fonts/HoltwoodOneSC-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ProtestStrike-Regular";
+    src: url("fonts/ProtestStrike-Regular.ttf") format("truetype");
+    font-weight: 400px;
+}
