@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+header {
+    background-color: #2ADEC4; 
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header div {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #0056b3; /* Azul para enlaces */
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #2ADEC4; /* Rojo suave al pasar el cursor */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Sección de categorías */
+.categories-section h2 {
+    font-size: 36px;
+    color: #b33a3a; /* Rojo suave */
+    margin-bottom: 20px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo de las tarjetas de categoría */
+.category-card {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    transition: transform 0.2s;
+    border: 2px solid #b33a3a; /* Borde rojo suave */
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    background-color: #f5eaea; /* Fondo claro al pasar el cursor */
+}
+
+/* Pie de página */
+footer {
+    background-color: #432ADE; /* Rojo suave */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #0056b3; /* Azul para enlaces */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f2f2f2;
+}
+
+/* Subtítulos de categorías */
+.category-subtitle {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
