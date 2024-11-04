@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #888484;
+}
+header {
+  background-color: #d3d3d3;
+  padding: 10px;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #000000;
+}
+header h1 {
+  font-size: 1.5em;
+}
+.contenedor {
+  margin-top: 90px;
+  margin-left: 13px;
+  margin-bottom: 10px;
+  width: 98%;
+  padding: 10px;
+  background-color: #d3d3d3;
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+}
+.funcion {
+  padding-top: 12%;
+}
+.Titulo {
+  padding-left: 20px;
+}
+.espacio {
+  background-color: #888484;
+  padding-bottom: 10%;
+  padding-top: 21%;
+  margin-top: 24px;
+  margin-left: 20px;
+  border: 1px solid black;
+}
+.negocio-contenedor {
+  background-color: #888484;
+  padding-right: 30%;
+  padding-left: 13px;
+}
+.propietario{
+    padding-top: 10px;
+}
+.texto {
+  padding-top: 10%;
+  padding-bottom: 10px;
+}
+.input {
+  padding-right: 89%;
+}
+.boton {
+  margin-top: 28%;
+  margin-bottom: 8%;
+  padding: 10px 30px 10px 30px;
+  border: 1px solid black;
+}
+.tengo {
+  padding-left: 30%;
+  text-decoration: none;
+}
+.medios {
+  background-color: #d3d3d3;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #000000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.as {
+    color: #000000;
+    text-decoration: none;
+  }
