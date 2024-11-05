@@ -1,0 +1,196 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    background: white;
+    margin: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_tittle{
+    display: flex;
+    color: black;
+    padding: 0px 0px 0px 20px;
+}
+
+.itemlink{
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.headerlink_register{
+padding-right: 25px ;
+}
+
+.profile_comment {
+    display: flex;
+    margin: 10px;
+}
+
+.div_profile {
+    border: 1px black solid;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.flex_imgProfile {
+    display: flex;
+    margin-right: 20px;
+}
+
+.img_profile {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px; 
+}
+
+.comment_box {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    align-items: flex-start; 
+    padding: 10px; 
+    border: 1px solid black;
+    gap: 10px;
+}
+
+.comment_head {
+    background: white;
+    border-bottom: 1px solid #E5E5E5;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.comment_tittle{
+    text-decoration: none;
+    color: black;
+}
+.comment_tittle:hover{
+    text-decoration: underline;
+}
+
+.comment_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.comment_content {
+    background: #fff;
+    padding: 0px;
+    border-radius: 0 0 4px 4px;
+
+}
+
+.title_fav_ship{
+    display: flex;
+    align-items: center;
+}
+
+.box_favorites{
+    border: 1px black solid;
+    width: 50%;
+    text-align: center;
+    margin: 10px;
+}
+
+.box_shipments{
+    border: 1px black solid;
+    width: 50%;
+    text-align: center;
+    margin: 10px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.content_fav{
+    border: 1px black solid;
+    display: flex;
+    width: 50%;
+}
+.content_ship{
+    width: 50%;
+    border: 1px black solid;
+    align-items: center;
+    display: flex;
+}
+
+.unlist_productShip li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc
+}
+.item_productlink{
+    text-decoration: none;
+    color: black;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.unlist_productShip:hover{
+    text-decoration: underline;
+}
+
+.item_seguimiento{
+    margin-left: 20px;
+}
+
+.div_productImg{
+align-items: center;
+}
+.content_ship img{
+    margin-bottom: 10px;
+    height: auto;
+    width: 10%;
+    align-items: center;
+}
+
+.content_store{
+    margin-right: 15px;
+    border-right: 1px black solid;
+    width: 50%;
+    align-items: center;
+}
+
+
+.content_store h3{
+    text-align: center;
+}
+
+.content_product h3{
+    text-align: center;
+    margin-left: 100px;
+}
+
+.footer{
+    display: flex;
+    height: 100px;
+    background: white;
+    margin: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a{
+    margin-left: 50px;
+    margin-right: 50px;
+}
