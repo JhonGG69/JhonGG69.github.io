@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 820px;
+    background: #f3f2f2;
 }
 
 .div_centro {
@@ -10,7 +11,7 @@
     justify-content: space-between;
     width: 1400px;
     height: 600px;
-    background: lightblue;
+    background:white;
     padding: 20px;
     border-radius: 10px;
 }
@@ -27,6 +28,7 @@
     font-weight: 400px;
     font-size: 70px;
     margin-left: 20px;
+    padding-left: 60px;
 }
 
 .txt_cont {
@@ -42,12 +44,14 @@
     text-align: justify;
     font-family: sans-serif;
     font-weight: 700;
+    padding-left: 60px;
 }
 
 .sub_desc {
     height: 150px;
     width: 400px;
     margin-left: 20px;
+    padding-left: 60px;
 }
 
 .descrip {
@@ -59,9 +63,9 @@
 
 #Logo_pag {
     margin-right: 50px;
-    width: 1000px;
+    width: 900px;
     display: flex;
-    background: white;
+    background: #c4144e;
     border-radius: 10px;
 }
 
@@ -69,7 +73,14 @@
     margin-bottom: 10px;
     gap: 50px;
     font-family: "ProtestStrike-Regular";
-    font-weight: 200;
+    
+
+}
+
+.Prop_titulo{
+    font-family: sans-serif;
+    font-weight: 400px;
+    font-size: 25px;
 }
 
 .Regis_div {
@@ -107,13 +118,16 @@ p{
     justify-content: center; 
     align-items: center; 
     height: 60px;
-    background: lightblue;
+    background: #c4144e;
     padding: 20px;
     border-radius: 10px;
     letter-spacing: 2px;
     gap: 180px;
-    font-family: sans-serif;
-    font-size: small;
+}
 
+a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
 }
 
