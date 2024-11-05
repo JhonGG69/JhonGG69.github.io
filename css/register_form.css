@@ -6,6 +6,25 @@
     background: #f3f2f2;
 }
 
+.head{
+    border-radius: 25px;
+}
+
+h2{
+    padding-left: 20px;
+    font-family:"ProtestStrike-Regular";
+    font-weight: 900px;
+    font-size: 30px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 820px;
+    background: #f3f2f2;
+}
+
 .div_centro {
     display: flex;
     justify-content: space-between;

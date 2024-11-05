@@ -1,3 +1,14 @@
+.head{
+    border-radius: 25px;
+}
+
+h2{
+    padding-left: 20px;
+    font-family:"ProtestStrike-Regular";
+    font-weight: 900px;
+    font-size: 30px;
+}
+
 .contenedor {
     display: flex;
     justify-content: center;
@@ -11,10 +22,9 @@
     justify-content: space-between;
     width: 1400px;
     height: 600px;
-    background: white;
+    background:white;
     padding: 20px;
     border-radius: 10px;
-    border-right-color: black;
 }
 
 .columna-texto {
@@ -30,7 +40,6 @@
     font-size: 70px;
     margin-left: 20px;
     padding-left: 60px;
-    
 }
 
 .txt_cont {
@@ -38,7 +47,6 @@
     width: 400px;
     margin-left: 20px;
     text-align: justify;
-    padding-left: 60px;
 }
 
 .bnv_msg {
@@ -46,9 +54,8 @@
     margin-bottom: 5px;
     text-align: justify;
     font-family: sans-serif;
-    font-weight: 600;
-    font-size: 35px;
-    
+    font-weight: 700;
+    padding-left: 60px;
 }
 
 .sub_desc {
@@ -62,51 +69,59 @@
     text-align: left;
     text-align: justify;
     word-break: initial;
-    font-weight: 500;
-    font-size: 24px;
 }
 
-.conte_butt {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    width: 800px; 
-    margin-left: 20px;
-    padding-left: 60px;
-}
-
-.butt_com{
-    height: 50px;
-    width: 250px;
-    padding: 10px;
-    border-radius: 30px;
-    margin-top: 40px;
-    font-family: sans-serif;
-    font-weight: 900;
-    background: #c4144e;
-    color: white;
-    font-size: 18px;
-}
-.butt_prop {
-    height: 50px;
-    width: 250px;
-    padding: 10px;
-    border-radius: 30px;
-    margin-top: 40px;
-    font-family: sans-serif;
-    font-weight: 900;
-    background: #c4144e;
-    color: white;
-    font-size: 18px;
-}
 
 #Logo_pag {
-    width: 30%;
+    margin-right: 50px;
+    width: 900px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background: #c4144e;
     border-radius: 10px;
+}
+
+.user_div{
+    margin-bottom: 10px;
+    gap: 50px;
+    font-family: "ProtestStrike-Regular";
+    
+
+}
+
+.Prop_titulo{
+    font-family: sans-serif;
+    font-weight: 400px;
+    font-size: 25px;
+}
+
+.Regis_div {
+    margin-top: 10px;
+    gap: 20px;
+    padding: 50px;
+    width: 300px;
+}
+.Action_div {
+    display: flex;
+    gap: 15px;
+    margin-top: 60px; 
+}
+
+.imput{
+    font-family: sans-serif;
+    height: 25px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.butt_reg{
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
 }
 
 .pie_pag {
@@ -114,25 +129,16 @@
     justify-content: center; 
     align-items: center; 
     height: 60px;
-    background:#c4144e;
+    background: #c4144e;
     padding: 20px;
     border-radius: 10px;
     letter-spacing: 2px;
     gap: 180px;
-    border-width: 1px;
-    border-color: black;
-
 }
+
 a{
     color: white;
     font-family: sans-serif;
-    font-size: 15px;
     text-decoration: none;
-}
-
-span{
-    background: #c4144e;
-    color: white;
-    border-radius: 10px;
 }
 
