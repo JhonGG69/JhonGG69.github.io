@@ -5,52 +5,65 @@
   font-family: Arial, sans-serif;
 }
 body {
-  background-color: #888484;
+  background-color: #f3f2f2;
 }
 header {
-  background-color: #d3d3d3;
+  background-color: #c4144e;
   padding: 10px;
   display: flex;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
   border: 1px solid #000000;
+  border-radius: 30px;
+  
 }
 header h1 {
   font-size: 1.5em;
+  font-family:"ProtestStrike-Regular";
+  color: white;
+
+  
 }
 .contenedor {
-  margin-top: 90px;
+  margin-top: 20px;
   margin-left: 13px;
   margin-bottom: 10px;
   width: 98%;
   padding: 10px;
-  background-color: #d3d3d3;
+  background-color: white;
   border: 1px solid #000000;
   display: flex;
   justify-content: space-between;
+  border-radius: 30px;
 }
 .funcion {
   padding-top: 12%;
 }
 .Titulo {
   padding-left: 20px;
+
 }
 .espacio {
-  background-color: #888484;
+  background-color: #c4144e;
   padding-bottom: 10%;
   padding-top: 21%;
   margin-top: 24px;
   margin-left: 20px;
   border: 1px solid black;
+  border-radius: 30px;
 }
 .negocio-contenedor {
-  background-color: #888484;
+  background-color: #c4144e;
   padding-right: 30%;
   padding-left: 13px;
+  border: 1px solid black;
+  border-radius: 30px;
 }
 .propietario{
     padding-top: 10px;
+    font-family:"ProtestStrike-Regular";
+    color: white;
 }
 .texto {
   padding-top: 10%;
@@ -58,27 +71,67 @@ header h1 {
 }
 .input {
   padding-right: 89%;
+  border: 1px solid white;
+  border-radius: 30px;
 }
 .boton {
   margin-top: 28%;
   margin-bottom: 8%;
   padding: 10px 30px 10px 30px;
   border: 1px solid black;
+  border-radius: 30px;
+}
+.boton:hover{
+  background-color: #830d34;
+  color: white;
+  
 }
 .tengo {
   padding-left: 30%;
   text-decoration: none;
 }
+.tengo:hover{
+  color: white;
+}
 .medios {
-  background-color: #d3d3d3;
+  background-color: #c4144e;
   margin-left: 10px;
   margin-right: 10px;
   border: 1px solid #000000;
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  border-radius: 30px;
+}
+.medios a:hover{
+  color: white;
+    background-color: #830d34;
+    border: 2px solid #830d34;
+    border-radius: 30px;
 }
 .as {
-    color: #000000;
+    color: white;
     text-decoration: none;
+
   }
+  .links {
+    padding-left:65%;
+    padding-top: 2%;
+
+  }
+  .links a{
+    text-decoration: none;
+ 
+   
+    border-radius: 30px;
+    color:white;
+
+  }
+.links a:hover{
+
+    color: white;
+    background-color: #830d34;
+    border: 2px solid #830d34;
+    
+  
+}
