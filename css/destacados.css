@@ -1,47 +1,70 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  body {
-    background-color: #888484;
-  }
-  header {
-    background-color: #d3d3d3;
-    padding: 10px;
-    display: flex;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 1px solid #000000;
-    
-  }
-  header h1 {
-    font-size: 1.5em;
-  }
-  .links {
-    padding-left: 49%;
-    padding-top: 3%;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f3f2f2;
+}
+header {
+  background-color: #c4144e;
+  padding: 10px;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
+header h1 {
+  font-size: 1.5em;
+  font-family:"ProtestStrike-Regular";
+  color: white;
+}
+.links {
+  padding-left:53%;
+  padding-top: 2%;
+
+}
+.links a{
+  text-decoration: none;
+
+ 
+  border-radius: 30px;
+  color:white;
+
+}
+.links a:hover{
+
+  color: white;
+  background-color: #830d34;
+  border: 2px solid #830d34;
+  
+
+}
   .contenedor {
     width: 98%;
     margin: 10px auto;
     padding: 10px;
-    background-color: #d3d3d3;
-    border: 1px solid #000000;
+    background-color: white;
+    border: 1px solid #f3f2f2;
+    border-radius: 30px;
   }
   .producto {
     padding-left: 20px;
     font-size: 40px;
+    
   }
   .producto-imagen {
     padding: 30px;
+    
   }
   .producto-imagen img {
     width: 200px;
     display: inline-block;
     border: 1px solid black;
+    border-radius: 30px;
     
   }
   .imagen{
@@ -57,6 +80,7 @@
     padding: 10px;
     border: 1px solid #000000;
     display: inline-flex;
+    border-radius: 30px;
   }
   .Info-Negocio{
     display: inline-block;
@@ -67,16 +91,22 @@
     margin-right: 90px;
   }
   .medios {
-    background-color: #d3d3d3;
+    background-color: #c4144e;
     margin-left: 10px;
     margin-right: 10px;
     border: 1px solid #000000;
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    border-radius: 30px;
+  }
+  .medios a:hover{
+    color: white;
+      background-color: #830d34;
+      border: 2px solid #830d34;
+      border-radius: 30px;
   }
   .as {
     color: #000000;
     text-decoration: none;
   }
-  
