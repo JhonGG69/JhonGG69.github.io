@@ -1,0 +1,147 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    background: white;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_tittle{
+    display: flex;
+    color: black;
+    padding: 0px 0px 0px 20px;
+}
+
+.itemlink{
+    text-decoration: none;
+    color: black;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+.itemlink:hover{
+text-decoration: underline;
+}
+
+.headerlink_login{
+    text-decoration: none;
+    color: black;
+}
+
+.headerlink_login:hover{
+    text-decoration: underline;
+}
+
+.headerlink_register:hover{
+    text-decoration: underline;
+}
+
+.headerlink_register{
+    text-decoration: none;
+    color: black;
+    padding-right: 25px;
+    gap: 20px;
+}
+
+.div_titles{
+    padding: 0px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_neg{
+    background: #c4144e;                  /*#c4144e* Rojo*/ /*#f3f2f2  gris*/
+    border-right-width: 10%;
+    margin: 0px;
+    gap: 10px;
+    border-radius: 25px;
+    width: 50%;
+    padding-top: 30px;
+}
+.title_neg h2{
+    color: white;
+}
+.about_neg{
+    width: 49%;
+    border-radius: 25px;
+    background: #f3f2f2;
+}
+
+.button_eliminar{
+    background: #c4144e;
+    color: white;
+}
+
+.div_prod_stat{
+    padding-bottom: 20px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    background:#f3f2f2;
+    border-radius: 25px;
+    display: flex;
+}
+
+.div_prod_stat h2{
+    width: 50%;
+    padding: 15px;
+    margin: 0;
+}
+
+.div_stat h2{
+    margin-left: 100px;
+    padding-bottom: 30px;
+}
+
+.div_stat img{
+    width: 50%;
+}
+
+.div_stat{
+    border-left: 13px white solid;
+    margin: 0;
+}
+
+.title_product{
+
+}
+
+.img_product{
+    border-radius: 25px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
+    margin: 0;
+}
+
+
+.img_product img{
+    width: 40%;
+}
+
+.footer{
+    border-radius: 25px;
+    display: flex;
+    height: 100px;
+    background: #c4144e;
+    margin: 10px;
+    align-items: center;
+}
+.footer a{
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
