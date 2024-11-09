@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Plaza Digital - Comentarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background-color: white; /* Rojo suave */
+            color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header div {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav a {
+            color: black; /* Azul para enlaces */
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #c4144e; /* Rojo suave al pasar el cursor */
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Sección de comentarios */
+        .comments-overview {
+            width: 30%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .comments-overview h2 {
+            font-size: 48px;
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .comments-overview p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #7f8c8d;
+        }
+
+        .hearts {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .hearts span {
+            color: black;
+            margin: 0 5px;
+        }
+
+        /* Sección de recientes */
+        .recent-comments {
+            width: 60%;
+        }
+
+        .recent-comments h3 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .comment-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .comment-card:hover {
+            transform: scale(1.02);
+        }
+
+        .comment-card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 2px solid #2c3e50;
+        }
+
+        .comment-text {
+            flex: 1;
+        }
+
+        .comment-text p {
+            margin: 5px 0;
+            color: #7f8c8d;
+        }
+
+        .heart-rating {
+            font-size: 24px;
+            color: #c4144e;
+            display: flex;
+            gap: 5px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #c4144e;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color:  white; /* Azul para enlaces */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="text-align: left;">
+            <div>LA</div>
+            <div>PLAZA</div>
+            <div>DIGITAL</div>
+        </div>
+        <nav>
+            <a href="#">Inicio</a>|
+            <a href="#">Categorías</a>|
+            <a href="#">Favoritos</a>|
+            <a href="#">Comentarios</a>|
+            <a href="#">Iniciar sesión</a>|
+            <a href="#">Registrarse</a>|
+        </nav>
+    </header>
+
+<div class="container">
+    <!-- Panel de comentarios -->
+    <div class="comments-overview">
+        <div class="recent-comments">
+            <h3>COMENTARIOS</h3>
+        </div>
+        <h2>22</h2>
+        <p>Reseñas</p>
+        <div class="hearts">
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>🤍</span>
+        </div>
+        <p>Calificaciones del último mes</p>
+    </div>
+
+    <!-- Comentarios recientes -->
+    <div class="recent-comments">
+        <h3>Recientes</h3>
+        <div class="comment-card">
+            <img src="https://via.placeholder.com/50" alt="Avatar">
+            <div class="comment-text">
+                <p>dd/mm/aaaa</p>
+                <p>Lorem Ipsum es simplemente el texto de relleno de la industria de la impresión y composición tipográfica.</p>
+            </div>
+            <div class="heart-rating">
+                ❤️❤️❤️❤️❤️
+            </div>
+        </div>
+        <div class="comment-card">
+            <img src="https://via.placeholder.com/50" alt="Avatar">
+            <div class="comment-text">
+                <p>dd/mm/aaaa</p>
+                <p>Lorem Ipsum es simplemente el texto de relleno de la industria de la impresión y composición tipográfica.</p>
+            </div>
+            <div class="heart-rating">
+                ❤️❤️❤️❤️❤️
+            </div>
+        </div>
+        <div class="comment-card">
+            <img src="https://via.placeholder.com/50" alt="Avatar">
+            <div class="comment-text">
+                <p>dd/mm/aaaa</p>
+                <p>Lorem Ipsum es simplemente el texto de relleno de la industria de la impresión y composición tipográfica.</p>
+            </div>
+            <div class="heart-rating">
+                ❤️❤️❤️❤️❤️
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <a href="#">Conócenos</a>
+    <a href="#">Contacto</a>
+    <a href="#">Soporte</a>
+    <a href="#">Términos y condiciones</a>
+    <a href="#">Índice del sitio</a>
+    <a href="#">Más</a>
+</footer>
+
+</body>
+</html>
