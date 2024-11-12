@@ -1,5 +1,10 @@
 .head{
     border-radius: 25px;
+    position: fixed;
+}
+
+body{
+    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
 }
 
 h2{
@@ -14,7 +19,7 @@ h2{
     justify-content: center;
     align-items: center;
     height: 820px;
-    background: #f3f2f2;
+    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
 }
 
 .div_centro {
@@ -24,7 +29,8 @@ h2{
     height: 600px;
     background:white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px;
 }
 
 .columna-texto {
@@ -76,8 +82,8 @@ h2{
     margin-right: 50px;
     width: 900px;
     display: flex;
-    background: #c4144e;
-    border-radius: 10px;
+    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
+    border-radius: 30px;
 }
 
 .user_div{
@@ -122,6 +128,13 @@ p{
     width: 300px;
     height: 40px;
     border-radius: 25px;
+    background-color:#b8faff}
+
+.butt_reg:hover{
+    background-color: #b8faff;
+    color: black;
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px black; 
 }
 
 .pie_pag {
@@ -129,11 +142,12 @@ p{
     justify-content: center; 
     align-items: center; 
     height: 60px;
-    background: #c4144e;
+    background: #107a81;
     padding: 20px;
     border-radius: 10px;
     letter-spacing: 2px;
     gap: 180px;
+    box-shadow: 0 4px 8px black;
 }
 
 a{
@@ -142,3 +156,6 @@ a{
     text-decoration: none;
 }
 
+span{
+    color: rgb(255, 255, 255);
+}

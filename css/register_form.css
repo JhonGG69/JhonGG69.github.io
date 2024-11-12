@@ -6,8 +6,13 @@
     background: #f3f2f2;
 }
 
+body{
+    background:linear-gradient(#ff7f2a, #F5591E, #5C1B0C);
+}
+
 .head{
     border-radius: 25px;
+    position: fixed;
 }
 
 h2{
@@ -22,7 +27,7 @@ h2{
     justify-content: center;
     align-items: center;
     height: 820px;
-    background: #f3f2f2;
+    background: linear-gradient(#ff7f2a, #F5591E, #5C1B0C);;
 }
 
 .div_centro {
@@ -32,7 +37,8 @@ h2{
     height: 600px;
     background:  white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px;
 }
 
 .columna-texto {
@@ -90,8 +96,8 @@ h2{
     margin-right: 50px;
     width: 900px;
     display: flex;
-    background:  #c4144e;
-    border-radius: 10px;
+    background:linear-gradient(#ff7f2a, #F5591E, #5C1B0C);
+    border-radius: 40px;
 }
 
 .user_div{
@@ -129,6 +135,15 @@ p{
     width: 350px;
     height: 40px;
     border-radius: 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.butt_reg:hover{
+    background-color: #ffba76;
+    color: black;
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px black; 
 }
 
 .pie_pag {
@@ -136,11 +151,12 @@ p{
     justify-content: center; 
     align-items: center; 
     height: 60px;
-    background: #c4144e;
+    background:#5C1B0C;
     padding: 20px;
     border-radius: 10px;
     letter-spacing: 2px;
     gap: 180px;
+    box-shadow: 0 4px 8px black;
 }
 
 a{
