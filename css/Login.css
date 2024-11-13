@@ -1,0 +1,86 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 820px;
+    background: #f3f2f2;
+}
+
+body{
+    background:linear-gradient(#ff7f2a, #F5591E, #5C1B0C);
+}
+
+.head{
+    border-radius: 25px;
+    position: fixed;
+}
+
+h2{
+    padding-left: 20px;
+    font-family:"ProtestStrike-Regular";
+    font-weight: 900px;
+    font-size: 30px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 820px;
+    background: linear-gradient(#ff7f2a, #F5591E, #5C1B0C);;
+}
+
+.div_centro {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    height: 500px;
+    background:  white;
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px;
+}
+
+.Div_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px; 
+    
+}
+
+.Titulo {
+    text-align: left;
+    font-family: "ProtestStrike-Regular";
+    font-weight: 400px;
+    font-size: 70px;
+    margin-left: 20px;
+    padding-left: 60px;
+}
+
+
+p{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.pie_pag {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 60px;
+    background:#5C1B0C;
+    padding: 20px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    gap: 180px;
+    box-shadow: 0 4px 8px black;
+}
+
+a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}

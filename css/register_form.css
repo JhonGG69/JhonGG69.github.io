@@ -7,7 +7,7 @@
 }
 
 body{
-    background:linear-gradient(#ff7f2a, #F5591E, #de4126);
+    background:linear-gradient(#ff7f2a, #F5591E, #5C1B0C);
 }
 
 .head{
@@ -96,7 +96,7 @@ h2{
     margin-right: 50px;
     width: 900px;
     display: flex;
-    background:linear-gradient(#ff7f2a, #F5591E, #de4126);
+    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
     border-radius: 40px;
 }
 
@@ -117,6 +117,7 @@ h2{
     display: flex;
     gap: 15px;
     margin-top: 60px; 
+    
 }
 
 .imput{
@@ -132,15 +133,21 @@ p{
 }
 
 .butt_reg{
-    width: 350px;
-    height: 40px;
+    width: 150px;
+    height: 30px;
     border-radius: 25px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: white;
+    color: black;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border: 1px solid black;
 }
 
 
 .butt_reg:hover{
-    background-color: #ffba76;
+    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
     color: black;
     transform: translateY(-5px); 
     box-shadow: 0 8px 16px black; 
@@ -151,7 +158,7 @@ p{
     justify-content: center; 
     align-items: center; 
     height: 60px;
-    background:#de4126;
+    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
     padding: 20px;
     border-radius: 10px;
     letter-spacing: 2px;
@@ -163,5 +170,6 @@ a{
     color: white;
     font-family: sans-serif;
     text-decoration: none;
+    
 }
 
