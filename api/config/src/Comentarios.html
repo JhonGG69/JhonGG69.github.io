@@ -9,14 +9,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5;
+            background:linear-gradient(#ff7f2a, #F5591E, #992b12);
             color: #333;
         }
 
         /* Estilo del encabezado */
         header {
-            background-color: white; /* Rojo suave */
-            color: black;
+            background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+            color: white;
             padding: 20px;
             display: flex;
             justify-content: space-between;
@@ -137,7 +137,7 @@
 
         /* Pie de página */
         footer {
-            background-color: #c4144e;
+            background:linear-gradient(#ff7f2a, #F5591E, #992b12);
             color: white;
             padding: 15px 20px;
             text-align: center;
@@ -156,6 +156,53 @@
         footer a:hover {
             color: #1abc9c;
         }
+        .medios {
+            background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+            margin-left: 10px;
+            margin-right: 10px;
+            border: 1px solid #000000;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 30px;
+          }
+          .medios a:hover{
+            color: white;
+              background-color: #830d34;
+              border: 2px solid #830d34;
+              border-radius: 30px;
+          }
+          .links {
+            padding-left:53%;
+            padding-top: 11px;
+          
+          }
+          .links a{
+            text-decoration: none;
+          
+           
+            border-radius: 30px;
+            color:white;
+          
+          }
+          .links a:hover{
+          
+            color: white;
+            background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+            border: 2px solid #830d34;
+            
+          
+          }
+          header {
+            background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+            padding: 10px;
+            display: flex;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border: 1px solid #000000;
+            border-radius: 30px;
+          }
     </style>
 </head>
 <body>
@@ -166,13 +213,13 @@
             <div>PLAZA</div>
             <div>DIGITAL</div>
         </div>
-        <nav>
-            <a href="#">Inicio</a>|
-            <a href="#">Categorías</a>|
-            <a href="#">Favoritos</a>|
-            <a href="#">Comentarios</a>|
-            <a href="#">Iniciar sesión</a>|
-            <a href="#">Registrarse</a>|
+        <nav class="links">
+            <a href="Producto_Descripción.html">Inicio</a>||
+            <a href="../src/Categorias.html">Categorías</a>|
+            <a href="../src/Favoritos.html">Favoritos</a>|
+            <a href="../src/Comentarios.html">Comentarios</a>|
+            <a href="../login_form.html">Iniciar sesión</a>|
+            <a href="../register_form.html">Registrarse</a>|
         </nav>
     </header>
 
@@ -230,7 +277,7 @@
     </div>
 </div>
 
-<footer>
+<footer class="medios">
     <a href="#">Conócenos</a>
     <a href="#">Contacto</a>
     <a href="#">Soporte</a>
