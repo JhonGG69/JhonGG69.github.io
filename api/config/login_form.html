@@ -14,11 +14,25 @@
         <div class="div_centro">
                 <div class="Div_form">
                     <h2>Inicio sesion </h2>
-                    <p>Correo</p>
-                    <input type="mail">
-                    <p>Contraseña</p>
-                    <input type="password">
-                   <a href="src/perfilComprador.html"> <button>Ingresar</button></a>
+                    <script>
+                        function verificarEmail() {
+                            var email = document.getElementById("email").value;
+                            if (email.includes("propietario.com")) {
+                                window.location.href = "src/perfilPropietario.html";
+                            } else if (email.includes("comprador.com")) {
+                                window.location.href = "src/perfilComprador.html";  
+                            } else {
+                                alert("Correo no válido para redirección.");
+                            }
+                        }
+                    </script>
+
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>   
+                    <label for="email">Comtraseña:</label><br>
+                    <input type="password" id="password" name="passwd" required><br><br>
+                    
+                <button onclick="verificarEmail()">Login</button>
                 </div>
             </div>
         </div>
