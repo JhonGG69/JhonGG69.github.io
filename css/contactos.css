@@ -1,0 +1,221 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 820px;
+    background: #f3f2f2;
+}
+
+body{
+    background:linear-gradient(#ff7f2a, #F5591E, #5C1B0C);
+}
+
+.head{
+    border-radius: 25px;
+    position: fixed;
+}
+
+h2{
+    padding-left: 20px;
+    font-family:"ProtestStrike-Regular";
+    font-weight: 900px;
+    font-size: 30px;
+}
+.ps{
+    color: white;
+}
+.contactos{
+    padding: 10px;
+    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
+    border-radius: 40px;   
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 820px;
+    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
+}
+
+.div_centro {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    height: 600px;
+    background:  white;
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px;
+}
+
+.columna-texto {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+header {
+    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+header div {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #0056b3; /* Azul para enlaces */
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #2ADEC4; /* Rojo suave al pasar el cursor */
+}
+.Titulo {
+    text-align: left;
+    font-family: "ProtestStrike-Regular";
+    font-weight: 400px;
+    font-size: 70px;
+    margin-left: 20px;
+    padding-left: 60px;
+}
+
+.Ttl_usuario{
+    font-family: sans-serif;
+    font-weight: 400px;
+    font-size: 25px;
+    color: white;
+}
+
+.txt_cont {
+    height: 150px;
+    width: 400px;
+    margin-left: 20px;
+    text-align: justify;
+    padding-left: 60px;
+}
+
+.bnv_msg {
+    text-align: left;
+    margin-bottom: 5px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.sub_desc {
+    height: 150px;
+    width: 400px;
+    margin-left: 20px;
+    padding-left: 60px;
+}
+
+.descrip {
+    text-align: left;
+    text-align: justify;
+    word-break: initial;
+}
+
+
+#Logo_pag {
+    margin-right: 50px;
+    width: 900px;
+    display: flex;
+    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
+    border-radius: 40px;
+}
+
+.user_div{
+    margin-bottom: 10px;
+    gap: 50px;
+    font-family: "ProtestStrike-Regular";
+    font-weight: 200;
+}
+
+.Regis_div {
+    margin-top: 1px;
+    gap: 20px;
+    padding: 50px;
+    width: 300px;
+}
+.Action_div {
+    display: flex;
+    gap: 15px;
+    margin-top: 60px; 
+    
+}
+
+.imput{
+    font-family: sans-serif;
+    height: 25px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.butt_reg{
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: white;
+    color: black;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border: 1px solid black;
+}
+
+
+.butt_reg:hover{
+    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
+    color: black;
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px black; 
+}
+
+.pie_pag {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 30px;
+    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
+    padding: 20px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    gap: 180px;
+    box-shadow: 0 4px 8px black;
+}
+
+.medios {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 60px;
+    background:#992b12;
+    padding: 20px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    gap: 180px;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 4px 8px black;
+  }
+  .medios a {
+    color: white;
+    text-decoration: none;
+  }
+
