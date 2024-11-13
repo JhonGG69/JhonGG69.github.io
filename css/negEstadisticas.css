@@ -1,22 +1,26 @@
 body{
     margin:0;
     box-sizing: border-box;
-    background-color: white;
+    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
 }
 
-.header{
-    display: flex;
-    background: white;
-    margin: 10px;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .header_tittle{
     display: flex;
     color: black;
     padding: 0px 0px 0px 20px;
 }
+header {
+    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    padding: 10px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+  }
 
 .itemlink{
     text-decoration: none;
@@ -28,24 +32,27 @@ body{
 text-decoration: underline;
 }
 
-.headerlink_login{
-    text-decoration: none;
-    color: black;
-}
-
-.headerlink_login:hover{
-    text-decoration: underline;
-}
-
-.headerlink_register:hover{
-    text-decoration: underline;
-}
-
-.headerlink_register{
-    text-decoration: none;
-    color: black;
-    padding-right: 25px;
-    gap: 20px;
+    .links {
+        padding-left:53%;
+        padding-top: 80px;
+      
+      }
+      .links a{
+        text-decoration: none;
+      
+       
+        border-radius: 30px;
+        color:white;
+      
+      }
+      .links a:hover{
+      
+        color: white;
+        background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+        border: 2px solid #830d34;
+        
+      
+      
 }
 
 .div_titles{
@@ -57,7 +64,7 @@ text-decoration: underline;
 }
 
 .title_neg{
-    background: #c4144e;                  /*#c4144e* Rojo*/ /*#f3f2f2  gris*/
+    background:linear-gradient(#ff7f2a, #F5591E, #992b12);              /*#c4144e* Rojo*/ /*#f3f2f2  gris*/
     border-right-width: 10%;
     margin: 0px;
     gap: 10px;
@@ -75,7 +82,7 @@ text-decoration: underline;
 }
 
 .button_eliminar{
-    background: #c4144e;
+    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
     color: white;
 }
 
@@ -131,7 +138,7 @@ text-decoration: underline;
     border-radius: 25px;
     display: flex;
     height: 100px;
-    background: #c4144e;
+    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
     margin: 10px;
     align-items: center;
 }
