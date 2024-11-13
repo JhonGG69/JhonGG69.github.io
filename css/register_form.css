@@ -7,7 +7,7 @@
 }
 
 body{
-    background:linear-gradient(#ff7f2a, #F5591E, #5C1B0C);
+    background:linear-gradient(#ff7f2a, #F5591E, #de4126);
 }
 
 .head{
@@ -27,7 +27,7 @@ h2{
     justify-content: center;
     align-items: center;
     height: 820px;
-    background: linear-gradient(#ff7f2a, #F5591E, #5C1B0C);;
+    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
 }
 
 .div_centro {
@@ -96,7 +96,7 @@ h2{
     margin-right: 50px;
     width: 900px;
     display: flex;
-    background:linear-gradient(#ff7f2a, #F5591E, #5C1B0C);
+    background:linear-gradient(#ff7f2a, #F5591E, #de4126);
     border-radius: 40px;
 }
 
@@ -151,7 +151,7 @@ p{
     justify-content: center; 
     align-items: center; 
     height: 60px;
-    background:#5C1B0C;
+    background:#de4126;
     padding: 20px;
     border-radius: 10px;
     letter-spacing: 2px;
