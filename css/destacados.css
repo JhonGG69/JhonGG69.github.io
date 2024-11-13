@@ -5,10 +5,10 @@
   font-family: Arial, sans-serif;
 }
 body {
-  background-color: #f3f2f2;
+  background:linear-gradient(#ff7f2a, #F5591E, #992b12);
 }
 header {
-  background-color: #c4144e;
+  background:linear-gradient(#ff7f2a, #F5591E, #992b12);
   padding: 10px;
   display: flex;
   margin-top: 10px;
@@ -38,7 +38,7 @@ header h1 {
 .links a:hover{
 
   color: white;
-  background-color: #830d34;
+  background:linear-gradient(#ff7f2a, #F5591E, #992b12);
   border: 2px solid #830d34;
   
 
@@ -91,7 +91,7 @@ header h1 {
     margin-right: 90px;
   }
   .medios {
-    background-color: #c4144e;
+    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
     margin-left: 10px;
     margin-right: 10px;
     border: 1px solid #000000;
