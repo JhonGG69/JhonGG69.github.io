@@ -1,37 +1,52 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+body{
+    margin:0;
+    box-sizing: border-box;
+    background:#f3f2f2;
 }
 
-
-header {
-    background-color: #2ADEC4; 
-    color: white;
-    padding: 30px;
+.header{
     display: flex;
+    background: white;
+    margin: 10px;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
 }
 
-header div {
-    font-size: 24px;
-    font-weight: bold;
+.header_tittle{
+    display: flex;
+    color: black;
+    padding: 0px 0px 0px 20px;
 }
 
-header nav a {
-    color: #0056b3; /* Azul para enlaces */
+.itemlink{
+    padding-right: 35px;
+    padding-left: 35px;
     text-decoration: none;
-    padding: 0 15px;
-    font-size: 14px;
-    transition: color 0.3s;
+    color: black;
 }
 
-header nav a:hover {
-    color: #2ADEC4; /* Rojo suave al pasar el cursor */
+.itemlink:hover{
+    text-decoration: underline;
+}
+
+.headerlink_login{
+    text-decoration: none;
+    color: black;
+}
+
+.headerlink_login:hover{
+    text-decoration: underline;
+}
+
+.headerlink_register{
+    padding-right: 25px ;
+    color: black;
+    text-decoration: none;
+}
+
+.headerlink_register:hover{
+    text-decoration: underline;
 }
 
 /* Contenedor principal */
@@ -44,7 +59,7 @@ header nav a:hover {
 /* Sección de categorías */
 .categories-section h2 {
     font-size: 36px;
-    color: #b33a3a; /* Rojo suave */
+    color: #c4144e; /* Rojo suave */
     margin-bottom: 20px;
 }
 
@@ -67,7 +82,7 @@ header nav a:hover {
     font-size: 16px;
     color: #333;
     transition: transform 0.2s;
-    border: 2px solid #b33a3a; /* Borde rojo suave */
+    border: 2px solid #c4144e; /* Borde rojo suave */
 }
 
 .category-card:hover {
@@ -75,32 +90,23 @@ header nav a:hover {
     background-color: #f5eaea; /* Fondo claro al pasar el cursor */
 }
 
-/* Pie de página */
-footer {
-    background-color: #432ADE; /* Rojo suave */
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    font-size: 12px;
+.footer{
     display: flex;
-    justify-content: space-around;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
-}
+    height: 100px;
+    background: #c4144e;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:25px ;
 
-footer a {
-    color: #0056b3; /* Azul para enlaces */
+}
+.footer a{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
-footer a:hover {
-    color: #f2f2f2;
-}
-
-/* Subtítulos de categorías */
-.category-subtitle {
-    font-size: 18px;
-    color: #333;
-    margin-top: 20px;
-    margin-bottom: 10px;
+.footer a:hover{
+    text-decoration: underline;
 }

@@ -120,12 +120,9 @@ header h1 {
 
   }
   .links a{
-    text-decoration: none;
- 
-   
+    text-decoration: none;   
     border-radius: 30px;
     color:white;
-
   }
 .links a:hover{
 

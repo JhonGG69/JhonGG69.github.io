@@ -4,30 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PerfilP</title>
-    <link rel="stylesheet" href="../../../StylePP.css">
+    <link rel="stylesheet" href="/css/StylePP.css">
 </head>
 <body>
     <header class="header">
             <div class="header_tittle">
-                <h1>
-                    <div>La</div>
-                    <div>plaza</div>
-                    <div>Digital</div>
-                </h1>
+                <h2>L P D</h2>
             </div>
             <nav class="header_links">
                 <a class="itemlink" href="#">Inicio</a> |&nbsp;
                 <a class="itemlink" href="#">Categorias</a> |&nbsp;
-                <a class="itemlink" href="#">Favoritos</a> |&nbsp;
-                <a class="itemlink" href="#">Comentarios</a> 
-                <a  class="headerlink_login" href="#">Iniciar sesión</a> |&nbsp;
-                <a class="headerlink_register" href="#">Registrarse</a> 
+                <a class="itemlink" href="/api/config/src/Comentarios.html">Comentarios</a> 
+                <a class="headerlink_register" href="/index.html">Cerrar sesión</a> 
             </nav> 
     </header>
 
     <div class="flexbox">
         <div class="flex-item_profile">
-            <img class="div_profileimg" src="../src/Img/Profile.jpg" title="Profile img" alt="Imagen de perfil">
+            <img class="div_profileimg" src="/imgs/Profile.jpg"Profile img" alt="Imagen de perfil">
             <div class="profile-info">
                 <h2>Nombre propietario</h2>
                 <p class="phone_number">+57 32424442</p>
@@ -44,22 +38,44 @@
         <div class="business">
             <h3>Mis negocios</h3>
                 <label for="Opcion">Negocio #1</label>
-                    <select name="Opciones" id="Opciones">
-                        <option value="Opcion 1">Opcion1</option>
-                        <option value="Opcion 2">Opcion2</option>
-                        <option value="Opcion 3">Opcion3</option>
-                        <option value="Opcion 4">Opcion4</option>
-                    </select>    
+                    <label class="switch">
+                        <input type="checkbox" id="toggleSwitch"> 
+                            <span class="slider"></span>
+                    </label>
+                        <select class="opciones" name="Opciones" id="Opciones" aria-placeholder="Categorias">
+                            <option value="" disabled selected>Categorias</option>
+                            <option value="Opcion 1">Tecnologia</option>
+                            <option value="Opcion 2">Alimentos</option>
+                            <option value="Opcion 3">Moda</option>
+                            <option value="Opcion 4">Belleza</option>
+                    </select> 
             <label for="Opcion2">Negocio #2</label>
-                <select name="opciones2" id="Opciones2">
-                    <option value="Opcion 1">Opcion1</option>
-                    <option value="Opcion 2">Opcion2</option>
-                    <option value="Opcion 3">Opcion3</option>
-                    <option value="Opcion 4">Opcion4</option>
-                </select>       
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch"> 
+                        <span class="slider"></span>
+                </label>
+                <select  class="opciones" name="opciones2" id="Opciones2">
+                    <option value="" disabled selected>Categorias</option>
+                    <option value="Opcion 1">Tecnologia</option>
+                    <option value="Opcion 2">Alimentos</option>
+                    <option value="Opcion 3">Moda</option>
+                    <option value="Opcion 4">Belleza</option>
+                </select>
+                <label for="Opcion3">Negocio #3</label>
+                    <label class="switch">
+                        <input type="checkbox" id="toggleSwitch"> 
+                            <span class="slider"></span>
+                    </label>
+                <select class="opciones" name="opciones3" id="Opciones3">
+                    <option value="" disabled selected>Categorias</option>
+                    <option value="Opcion 1">Tecnologia</option>
+                    <option value="Opcion 2">Alimentos</option>
+                    <option value="Opcion 3">Moda</option>
+                    <option value="Opcion 4">Belleza</option>
+                </select>          
         </div>
             <div class="business_img">
-            <img src="" alt="Imagenes negocio">
+            <img src="/imgs/negocio.png" alt="Imagenes negocio">
             </div>
     </div>
     <footer class="footer">
