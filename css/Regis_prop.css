@@ -1,161 +1,105 @@
-.head{
-    border-radius: 25px;
-    position: fixed;
-}
-
-body{
-    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
-}
-
-h2{
-    padding-left: 20px;
-    font-family:"ProtestStrike-Regular";
-    font-weight: 900px;
-    font-size: 30px;
-}
-
-.contenedor {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 820px;
-    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
-}
-
-.div_centro {
-    display: flex;
-    justify-content: space-between;
-    width: 1400px;
-    height: 600px;
-    background:white;
-    padding: 20px;
-    border-radius: 35px;
-    box-shadow: 0 0 20px;
-}
-
-.columna-texto {
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .form-container {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form-header h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .form-header p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-    width: 65%;
-}
-
-.Titulo {
-    text-align: left;
-    font-family: "ProtestStrike-Regular";
-    font-weight: 400px;
-    font-size: 70px;
-    margin-left: 20px;
-    padding-left: 60px;
-}
-
-.txt_cont {
-    height: 150px;
-    width: 400px;
-    margin-left: 20px;
-    text-align: justify;
-}
-
-.bnv_msg {
-    text-align: left;
-    margin-bottom: 5px;
-    text-align: justify;
-    font-family: sans-serif;
-    font-weight: 700;
-    padding-left: 60px;
-}
-
-.sub_desc {
-    height: 150px;
-    width: 400px;
-    margin-left: 20px;
-    padding-left: 60px;
-}
-
-.descrip {
-    text-align: left;
-    text-align: justify;
-    word-break: initial;
-}
-
-
-#Logo_pag {
-    margin-right: 50px;
-    width: 900px;
-    display: flex;
-    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
-    border-radius: 30px;
-}
-
-.user_div{
-    margin-bottom: 10px;
-    gap: 50px;
-    font-family: "ProtestStrike-Regular";
-    
-
-}
-
-.Prop_titulo{
-    font-family: sans-serif;
-    font-weight: 400px;
-    font-size: 25px;
-}
-
-.Regis_div {
-    margin-top: 10px;
-    gap: 20px;
-    padding: 50px;
-    width: 300px;
-}
-.Action_div {
-    display: flex;
-    gap: 15px;
-    margin-top: 60px; 
-}
-
-.imput{
-    font-family: sans-serif;
-    height: 25px;
-    width: 350px;
-    border-radius: 20px;
-}
-
-p{
-    font-family: sans-serif;
-    font-weight: 600;
-}
-
-.butt_reg{
-    width: 300px;
-    height: 40px;
-    border-radius: 25px;
-    background-color:#b8faff}
-
-.butt_reg:hover{
-    background-color: #b8faff;
-    color: black;
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 8px black; 
-}
-
-.pie_pag {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 60px;
-    background: #107a81;
-    padding: 20px;
-    border-radius: 10px;
-    letter-spacing: 2px;
-    gap: 180px;
-    box-shadow: 0 4px 8px black;
-}
-
-a{
-    color: white;
-    font-family: sans-serif;
-    text-decoration: none;
-}
-
-span{
-    color: rgb(255, 255, 255);
-}
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #333;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .btn-submit {
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 1.5rem;
+    }
+  
+    .form-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .form-header p {
+      font-size: 0.9rem;
+    }
+  }

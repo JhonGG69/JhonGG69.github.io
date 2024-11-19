@@ -1,86 +1,135 @@
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 820px;
-    background: #f3f2f2;
-}
-
-body{
-    background:linear-gradient(#ff7f2a, #F5591E, #5C1B0C);
-}
-
-.head{
-    border-radius: 25px;
-    position: fixed;
-}
-
-h2{
-    padding-left: 20px;
-    font-family:"ProtestStrike-Regular";
-    font-weight: 900px;
-    font-size: 30px;
-}
-
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 820px;
-    background: linear-gradient(#ff7f2a, #F5591E, #5C1B0C);;
-}
-
-.div_centro {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .header {
     display: flex;
     justify-content: space-between;
-    width: 650px;
-    height: 500px;
-    background:  white;
-    padding: 20px;
-    border-radius: 35px;
-    box-shadow: 0 0 20px;
-}
-
-.Div_form{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 15px; 
-    
-}
-
-.Titulo {
-    text-align: left;
-    font-family: "ProtestStrike-Regular";
-    font-weight: 400px;
-    font-size: 70px;
-    margin-left: 20px;
-    padding-left: 60px;
-}
-
-
-p{
-    font-family: sans-serif;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
     font-weight: 600;
-}
-
-.pie_pag {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 60px;
-    background:#5C1B0C;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #ff7f2a;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Ajusta para compensar header/footer */
     padding: 20px;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    padding: 30px;
     border-radius: 10px;
-    letter-spacing: 2px;
-    gap: 180px;
-    box-shadow: 0 4px 8px black;
-}
-
-a{
-    color: white;
-    font-family: sans-serif;
-    text-decoration: none;
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7f2a;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f5591e;
+  }
+  
+  .links {
+    margin-top: 15px;
+  }
+  
+  .links a {
+    color: #ff7f2a;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 0.9rem;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-nav a:hover {
+    text-decoration: underline;
+  }
+  

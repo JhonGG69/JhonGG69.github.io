@@ -4,61 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro propietario</title>
-    <link rel="stylesheet" href="../../css/Regis_prop.css">
-    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/css/Regis_prop.css">
 </head>
-<header class="head">
-    <h2>L <span>P</span> D</h2>
-</header>
-<div class="contenedor">
-    <div class="div_centro">
-        
-        <div class="columna-texto">
-            <h1 class="Titulo">La plaza Digital</h1>
-            <div class="txt_cont">
-                <p class="bnv_msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, sunt enim rerum commodi delectus ratione quidem dignissimos adipisci quas temporibus quod itaque iure, incidunt voluptatem vel aut impedit! Temporibus, ducimus?</p>
-            </div>
-            
-            <div class="sub_desc">
-                <p class="descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis alias rem nihil atque, non eaque explicabo. Dolorem quos fuga quia, voluptas repellat, itaque veniam maxime non illo quas expedita porro.</p>
-            </div>
+<body>
+<main class="form-container">
+    <section class="form-header">
+    <h1>Propietario</h1>
+    </section>
+    <section class="form-body">
+    <form action="#" method="POST">
+        <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Pepe" required>
         </div>
-        <div id="Logo_pag">
-            <div class="Regis_div">
-                <div class="user_div">
-                    <p class="Prop_titulo">PROPIETARIO.</p>
-                </div>
-                <p>Correo.</p>
-                <input type="email" class="imput" placeholder="@expl.com">
-                
-                <p>Nombre.</p>
-                <input type="text" class="imput" placeholder="'Pedro'" required>
-                
-                <p>Contraseña.</p>
-                <input type="text" class="imput">
-                
-                <p>Confirmar contraseña.<a href=""></a></p>
-                <input type="password" class="imput" placeholder="******">
-                
-                    <div class="Action_div">
-                        <a href="src/Registro_Negocio.html"><button class="butt_reg">Siguiente</button></a>
-                        <a href="/index.html">No soy un propietario</a>
-                        <a href="login_form.html">Tengo una cuenta</a>
-                    </div>
-            </div>
-            </div>
+        <div class="form-group">
+        <label for="surname">telefono</label>
+        <input type="text" id="surname" name="surname" placeholder="000-000-00-00" required>
         </div>
-    </div>
-</div>
-
-<footer>
-    <div class="pie_pag">
-        <a href="#">Conócenos</a>
-        <a href="#">Contacto</a>
-        <a href="#">Soporte</a>
-        <a href="#">Términos y condiciones</a>
-        <a href="#">Índice del sitio</a>
-        <a href="#">Mas</a>
-    </div>   
+        <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="@expl.com" required>
+        </div>
+        <div class="form-group">
+        <label for="message">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="*******" required>
+        </div>
+        <button class="btn-submit"><a href="/api/config/src/Registro_Negocio.html">Siguiente</a></button>
+    </form>
+    </section>
+</main>
 </body>
 </html>

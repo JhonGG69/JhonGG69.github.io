@@ -7,48 +7,27 @@
     <link rel="stylesheet" href="../../../css/Registro_Negocio.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <h1>LA<br />PLAZA<br />DIGITAL</h1>
-      </div>
-      <div class="links">
-
-        <a href="../src/Comentarios.html">Comentarios</a>&nbsp;&nbsp;
-        <a href="../login_form.html">Iniciar sesión</a>&nbsp;&nbsp;
-        <a href="../register_form.html">Registrarse</a>&nbsp;&nbsp;
-      </div>
-    </header>
-    <div class="contenedor">
-      <div class="funcion">
-        <h1 class="Titulo">LA PLAZA DIGITAL</h1>
-        <h3 class="Titulo">Why do we use it ?</h3>
-        <h3 class="Titulo">is simply.</h3>
-        <h5 class="Titulo">ayudarte a mejorar las ventas de tu industria</h5>
-        <h5 class="Titulo">ayudarte a mejorar las ventas de tu industria</h5>
-        <div class="espacio"></div>
-      </div>
-      <div class="negocio-contenedor">
-        <h1 class="propietario">Propietario</h1>
-        <h4 class="texto">Nombre negocio</h4>
-        <input type="email" class="input">
-        <h4 class="texto">correo electronico establecimiento</h4>
-        <input type="name" class="input">
-        <h4 class="texto" >tipo de producto</h4>
-        <input type="direccion" class="input">
-        <h4 class="texto"> ubicaion (opcional)</h4>
-        <input type="telefono" class="input">
-        <a href="negEstadisiticas.html"><button class="boton">Registrar</button></a>
-        <a href="../login_form.html" class="tengo">TENGO CUENTA</a>
-      </div>
-    </div>
-
-    <div class="medios">
-      <a href="#" class="as">contactanos</a>
-      <a href="#" class="as">contacto</a>
-      <a href="#" class="as">soporte</a>
-      <a href="#" class="as">terminos y condiciones</a>
-      <a href="#" class="as">indice del año</a>
-      <a href="#" class="as">mas</a>
-    </div>
+    <main class="form-container">
+      <section class="form-header">
+      <h1>Negocio</h1>
+      </section>
+      <section class="form-body">
+      <form action="#" method="POST">
+          <div class="form-group">
+          <label for="name">Nombre negocio</label>
+          <input type="text" id="name" name="name" placeholder="Pepe" required>
+          </div>
+          <div class="form-group">
+          <label for="surname">telefono negocio</label>
+          <input type="text" id="surname" name="surname" placeholder="000-000-00-00" required>
+          </div>
+          <div class="form-group">
+          <label for="email">Email negocio</label>
+          <input type="email" id="email" name="email" placeholder="@expl.com" required>
+          </div>
+          <button type="submit" class="btn-submit">Registrar</button>
+      </form>
+      </section>
+  </main>  
   </body>
 </html>
