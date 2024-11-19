@@ -1,12 +1,12 @@
 body{
     margin:0;
     box-sizing: border-box;
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
 }
 
 .header{
     display: flex;
-    background: #ff7f2a,;
+    background: #18b0bc;
     margin: 10px;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +79,7 @@ body{
 }
 
 input:checked + .slider {
-    background-color: green;
+    background-color: #0d6268;
 }
 
 input:checked + .slider:before {
@@ -196,7 +196,7 @@ input:checked + .slider:before {
 .footer{
     display: flex;
     height: 100px;
-    background: #992b12;
+    background: #0d6268;
     margin: 10px;
     justify-content: space-between;
     align-items: center;

@@ -1,12 +1,10 @@
 body{
     margin:0;
     box-sizing: border-box;
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
 }
 
-<<<<<<< HEAD
 
-=======
 .header{
     display: flex;
     background: #ff7f2a,;
@@ -18,7 +16,7 @@ body{
     border-color: black;
     box-shadow: 0 4px 8px black;
 }
->>>>>>> 82e067d8e59d3aa02d8f8a4102147bd7e6468cd1
+
 
 .header_tittle{
     display: flex;
@@ -26,7 +24,7 @@ body{
     padding: 0px 0px 0px 20px;
 }
 header {
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
     padding: 10px;
     display: flex;
     margin-top: 10px;
@@ -46,7 +44,6 @@ header {
 text-decoration: underline;
 }
 
-<<<<<<< HEAD
     .links {
         padding-left:53%;
         padding-top: 80px;
@@ -63,12 +60,12 @@ text-decoration: underline;
       .links a:hover{
       
         color: white;
-        background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+        background:linear-gradient(#00eafb, #18b0bc, #0d6268);
         border: 2px solid #830d34;
-        
+    }
       
       
-=======
+
 .headerlink_login{
     text-decoration: none;
     color: white;
@@ -87,7 +84,7 @@ text-decoration: underline;
     color: white;
     padding-right: 25px;
     gap: 20px;
->>>>>>> 82e067d8e59d3aa02d8f8a4102147bd7e6468cd1
+
 }
 
 .div_titles{
@@ -99,11 +96,11 @@ text-decoration: underline;
 }
 
 .title_neg{
-<<<<<<< HEAD
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);              /*#c4144e* Rojo*/ /*#f3f2f2  gris*/
-=======
+
+    background:linear-gradient(#00eafb, #18b0bc, #0d6268);              /*#c4144e* Rojo*/ /*#f3f2f2  gris*/
+
     background: white;                  /*#c4144e* Rojo*/ /*#f3f2f2  gris*/
->>>>>>> 82e067d8e59d3aa02d8f8a4102147bd7e6468cd1
+
     border-right-width: 10%;
     margin: 0px;
     gap: 10px;
@@ -121,11 +118,11 @@ text-decoration: underline;
 }
 
 .button_eliminar{
-<<<<<<< HEAD
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
-=======
-    background: #992b12;
->>>>>>> 82e067d8e59d3aa02d8f8a4102147bd7e6468cd1
+
+    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
+
+    background: #0d6268;
+
     color: white;
 }
 
@@ -160,10 +157,6 @@ text-decoration: underline;
     margin: 0;
 }
 
-.title_product{
-
-}
-
 .img_product{
     border-radius: 25px;
     align-items: center;
@@ -181,11 +174,11 @@ text-decoration: underline;
 .footer{
     display: flex;
     height: 100px;
-<<<<<<< HEAD
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
-=======
-    background: #992b12;
->>>>>>> 82e067d8e59d3aa02d8f8a4102147bd7e6468cd1
+
+    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
+
+    background: #0d6268;
+
     margin: 10px;
     justify-content: space-between;
     align-items: center;

@@ -18,6 +18,123 @@
   .navbar {
     display: flex;
     justify-content: space-between;
+
+
+    width: 1400px;
+    height: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 35px;
+    border-right-color: black;
+    box-shadow: 0 0 20px;
+}
+
+.columna-texto {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.Titulo {
+    text-align: left;
+    font-family: "ProtestStrike-Regular";
+    font-weight: 400px;
+    font-size: 70px;
+    margin-left: 20px;
+    padding-left: 60px;
+    text-align: justify;
+    
+}
+
+.txt_cont {
+    height: 150px;
+    width: 400px;
+    margin-left: 20px;
+    text-align: justify;
+    padding-left: 60px;
+}
+
+.bnv_msg {
+    text-align: left;
+    margin-bottom: 5px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    
+}
+
+.sub_desc {
+    height: 150px;
+    width: 400px;
+    margin-left: 20px;
+    padding-left: 60px;
+}
+
+.descrip {
+    text-align: left;
+    text-align: justify;
+    word-break: initial;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.conte_butt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 800px; 
+    margin-left: 20px;
+    padding-left: 60px;
+}
+
+.butt_com{
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-weight: 900;
+    background: #f15101;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.butt_com:hover{
+    background-color: #830d34;
+    color: white;
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px gray; 
+}
+
+.butt_prop {
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-weight: 900;
+    background: #f15101;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.butt_prop:hover{
+    background-color: #830d34;
+    color: white;
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px gray; 
+}
+
+
+#Logo_pag {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
     align-items: center;
   }
   

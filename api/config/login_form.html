@@ -14,6 +14,7 @@
 
         </nav>
     </header>
+
     
     <main class="main">
         <div class="form-container">
@@ -30,6 +31,30 @@
                 <div class="links">
                     <a href="#">Olvidé mi contraseña</a>
                     <a href="register_form.html">Registrarme</a>
+    <div class="contenedor">
+        <div class="div_centro">
+                <div class="Div_form">
+                    <h2>Inicio sesion </h2>
+                    <script>
+                        function verificarEmail() {
+                            var email = document.getElementById("email").value;
+                            if (email.includes("propietario.com")) {
+                                window.location.href = "src/perfilPropietario.html";
+                            } else if (email.includes("comprador.com")) {
+                                window.location.href = "src/perfilComprador.html";  
+                            } else {
+                                alert("Correo no válido para redirección.");
+                            }
+                        }
+                    </script>
+
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>   
+                    <label for="email">Comtraseña:</label><br>
+                    <input type="password" id="password" name="passwd" required><br><br>
+                    
+                <button onclick="verificarEmail()">Login</button>
+
                 </div>
             </form>
         </div>
@@ -37,6 +62,11 @@
     
     <footer class="footer">
         <nav class="footer-nav">
+    </div>
+    <footer>
+        <div class="pie_pag">
+            <a href="src/conocenos.html">Conócenos</a>
+            <a href="src/contactos.html">Contacto</a>
             <a href="#">Soporte</a>
             <a href="#">Términos</a>
             <a href="#">Índice del sitio</a>
