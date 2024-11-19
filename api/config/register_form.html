@@ -8,6 +8,7 @@
     <title>Registro</title>
 </head>
 <body>
+    <form name="register_form" action="../config/src/backend/signup.php" method="post"></form>
     <header class="head">
         <h2>L P D</h2>
     </header>
@@ -26,26 +27,20 @@
             </div>
             <div id="Logo_pag">
                 <div class="Regis_div">
-                    <div class="user_div">
-                        <p class="Ttl_usuario">USUARIO</p>
-                    </div>
-                    <p>Correo</p>
-                    <input type="email" class="imput" placeholder="@expl.com" required>
-                    
-                    <p>Nombre</p>
-                    <input type="text" class="imput" placeholder="'Pedro'">
-                    
-                    <p>Apodo</p>
-                    <input type="text" class="imput">
-                    
-                    <p>Contraseña</p>
-                    <input type="password" class="imput" placeholder="******">
-                    
-                        <div class="Action_div">
-                            <a href="login_form.html" class="butt_reg">registrame</a>
-                            <a href="../config/src/Producto_Descripción.html">Omitir por ahora</a>
-                            <a href="login_form.html">Ya tengo una cuenta</a>
+                    <form action="../config/src/backend/signup.php" name="register_form"  method="post">
+                        <div class="user_div">
+                            <p class="Ttl_usuario">USUARIO</p>
                         </div>
+                        <p>Correo</p>
+                        <input type="email" class="imput" name="email" placeholder="@expl.com" required>
+                        <p>Contraseña</p>
+                        <input type="password" name="passwd" class="imput" placeholder="******">
+                            <div class="Action_div">
+                                <button>Register</button>
+                                <a href="../config/src/Producto_Descripción.html">Omitir por ahora</a>
+                                <a href="login_form.html">Ya tengo una cuenta</a>
+                            </div>
+                    </form>
                 </div>
                 </div>
             </div>
