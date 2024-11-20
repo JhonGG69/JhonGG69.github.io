@@ -61,7 +61,7 @@ $result = pg_query($conn, $query);
 if ($result) {
     save_data_supabase($email, $enc_pass);
     echo "<script>alert('Registration successful!')</script>";
-    header('refresh:0; url=https://jhongg69.github.io/api/config/src/perfilComprador.htm');
+    header('refresh:0; url=https://jhongg69.github.io/api/config/src/perfilComprador.html');
 } else {
     echo "Registration failed!";
 }
