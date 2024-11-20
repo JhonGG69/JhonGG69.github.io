@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Producto</title>
+    <link rel="stylesheet" href="/css/compra.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Compra de Producto</h1>
+        <form name="compra" action="../src/backend/compra.php" method="post" class="formulario">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="producto">Producto</label>
+            <select id="producto" name="producto" required>
+                <option value="Producto 1">Fruta</option>
+                <option value="Producto 2">Pizza</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+
+            <label for="metodo_pago">Método de Pago</label>
+            <select id="metodo_pago" name="metodo_pago" required>
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="paypal">PayPal</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+
+            <button type="submit" class="boton-enviar">Realizar Compra</button>
+        </form>
+    </div>
+</body>
+</html>
