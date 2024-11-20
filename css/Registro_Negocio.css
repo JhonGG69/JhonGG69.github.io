@@ -183,3 +183,9 @@ textarea {
     color: white;
     background-color: #830d34;  
 }
+
+a{
+  
+  text-decoration: none;
+  color: white;
+}
