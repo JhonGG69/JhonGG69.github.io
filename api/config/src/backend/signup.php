@@ -49,7 +49,7 @@ $result = pg_query($conn, $query);
 $row = pg_fetch_assoc($result);
 if ($row) {
     echo "<script>alert('Email already exists!')</script>";
-    header('refresh:0; url=http://127.0.0.1/LaPlazaDigital/api/config/register_form.html');
+    header('refresh:0; url=https://jhongg69.github.io/api/config/login_form.html');
     exit();
 }
 
@@ -61,7 +61,7 @@ $result = pg_query($conn, $query);
 if ($result) {
     save_data_supabase($email, $enc_pass);
     echo "<script>alert('Registration successful!')</script>";
-    header('refresh:0; url=http://127.0.0.1/LaPlazaDigital/api/config/src/perfilComprador.html');
+    header('refresh:0; url=https://jhongg69.github.io/api/config/src/perfilComprador.htm');
 } else {
     echo "Registration failed!";
 }

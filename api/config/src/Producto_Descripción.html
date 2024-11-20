@@ -1,106 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Descripcion Producto </title>
-    <link rel="stylesheet" href="../../../css/Producto_Descripciòn.css" />
-  </head>
-  <body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Plaza Digital - Descripción de Producto</title>
+    <link rel="stylesheet" href="css/Producto_Descripcion.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .contenedor {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .producto {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .producto-contenedor {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .producto-imagen img {
+            width: 300px;
+            height: auto;
+        }
+        .producto-descripcion {
+            margin-left: 20px;
+        }
+        .producto-descripcion h1 {
+            margin-top: 0;
+        }
+        .des p {
+            margin: 5px 0;
+        }
+        .info {
+            margin-top: 10px;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .boton-compra {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .boton-compra:hover {
+            background-color: #0056b3;
+        }
+        .medios {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .medios a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .medios a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .pie_pag a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .pie_pag a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
     <header>
-      <div>
-        <h1>LA<br />PLAZA<br />DIGITAL</h1>
-      </div>
-      <div class="links">
-        <a href="../src/Categorias.html">Categorías</a>&nbsp;&nbsp;
-        <a href="../src/Favoritos.html">Favoritos</a>&nbsp;&nbsp;
-        <a href="../src/Comentarios.html">Comentarios</a>&nbsp;&nbsp;
-        <a href="../login_form.html">Iniciar sesión</a>&nbsp;&nbsp;
-        <a href="../register_form.html">Registrarse</a>
-      </div>
+        <div>
+            <h1>LA<br>PLAZA<br>DIGITAL</h1>
+        </div>
+        <div class="links">
+            <a href="src/Categorias.html">Categorías</a>
+            <a href="src/Favoritos.html">Favoritos</a>
+            <a href="src/Comentarios.html">Comentarios</a>
+            <a href="login_form.html">Iniciar sesión</a>
+            <a href="register_form.html">Registrarse</a>
+        </div>
     </header>
     <div class="contenedor">
-      <h2 class="producto">Producto</h2>
-      <div class="producto-contenedor">
-        <div class="producto-imagen">
-          <img src="imgs/producto.png" alt="Producto 1" />
+        <h2 class="producto">Producto 1</h2>
+        <div class="producto-contenedor">
+            <div class="producto-imagen">
+                <img src="imgs/producto1.png" alt="Producto 1">
+            </div>
+            <div class="producto-descripcion">
+                <h1>Descripción</h1>
+                <div class="des">
+                    <p>Es un hecho conocido que un lector se distraerá con el contenido legible de una página cuando mira su diseño. El propósito de usar Lorem Ipsum.</p>
+                    <p>Es un hecho conocido que un lector se distraerá con el contenido legible de una página cuando mira su diseño. El propósito de usar Lorem Ipsum.</p>
+                </div>
+                <div class="info">
+                    <p><strong>Disponible en:</strong> ejemplo</p>
+                    <p><strong class="ubicacion">Barrio:</strong> ejemplo</p>
+                </div>
+                <a href="compra.html" class="boton-compra">Comprar</a>
+            </div>
         </div>
-        <div class="producto-descripcion">
-          <h1>descripcion</h1>
-          <div class="des">
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum
-          </p>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum
-          </p>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum
-          </p>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum
-          </p>
-        </div>
-          <div class="info">
-            <p><strong>Disponible en:</strong> ejemplo</p>
-            <p><strong class="ubicacion">Barrio:</strong> ejemplo</p>
-          </div>
-        </div>
-      </div>
     </div>
-    
     <div class="contenedor">
-      <h2 class="producto">Producto</h2>
-      <div class="producto-contenedor">
-        <div class="producto-imagen">
-          <img src="imgs/productos 2.png" alt="Producto 1" />
+        <h2 class="producto">Producto 2</h2>
+        <div class="producto-contenedor">
+            <div class="producto-imagen">
+                <img src="imgs/producto2.png" alt="Producto 2">
+            </div>
+            <div class="producto-descripcion">
+                <h1>Descripción</h1>
+                <div class="des">
+                    <p>Es un hecho conocido que un lector se distraerá con el contenido legible de una página cuando mira su diseño. El propósito de usar Lorem Ipsum.</p>
+                    <p>Es un hecho conocido que un lector se distraerá con el contenido legible de una página cuando mira su diseño. El propósito de usar Lorem Ipsum.</p>
+                </div>
+                <div class="info">
+                    <p><strong>Disponible en:</strong> ejemplo</p>
+                    <p><strong class="ubicacion">Barrio:</strong> ejemplo</p>
+                </div>
+                <a href="compra.html" class="boton-compra">Comprar</a>
+            </div>
         </div>
-        <div class="producto-descripcion">
-          <h1>descripcion</h1>
-          <div class="des">
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum
-          </p>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum
-          </p>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum
-          </p>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum
-          </p>
-        </div>
-          <div class="info">
-            <p><strong>Disponible en:</strong> ejemplo</p>
-            <p><strong class="ubicacion">Barrio:</strong> ejemplo</p>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="medios">
-      <a href="conocenos.html" class="as">Conócenos</a>
-      <a href="contactos.html">Contacto</a>
-      <a href="#" class="as">soporte</a>
-      <a href="#" class="as">terminos y condiciones</a>
-      <a href="#" class="as">indice</a>
-      <a href="#" class="as">mas</a>
-    </div>
-  </body>
+    <footer>
+        <div class="pie_pag">
+            <a href="src/conocenos.html">Conócenos</a>
+            <a href="src/contactos.html">Contacto</a>
+            <a href="#">Soporte</a>
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Índice del sitio</a>
+            <a href="#">Más</a>
+        </div>
+    </footer>
+</body>
 </html>
+
+          
