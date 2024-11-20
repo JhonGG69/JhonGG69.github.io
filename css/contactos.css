@@ -7,7 +7,7 @@
 }
 
 body{
-    background:linear-gradient(#ff7f2a, #F5591E, #5C1B0C);
+    background:white;
 }
 
 .head{
@@ -26,15 +26,18 @@ h2{
 }
 .contactos{
     padding: 10px;
-    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
+    background-color: #333;
     border-radius: 40px;   
+}
+.contactos h5 {
+color: white;
 }
 .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 820px;
-    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
+    background-color: #494949;
 }
 
 .div_centro {
@@ -54,7 +57,7 @@ h2{
     width: 65%;
 }
 header {
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background-color: #333;
     color: white;
     padding: 30px;
     display: flex;
@@ -130,7 +133,7 @@ header nav a:hover {
     margin-right: 50px;
     width: 900px;
     display: flex;
-    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
+    background-color: #333;
     border-radius: 40px;
 }
 
@@ -161,9 +164,10 @@ header nav a:hover {
     border-radius: 20px;
 }
 
-p{
+.ps{
     font-family: sans-serif;
     font-weight: 600;
+    color: white;
 }
 
 .butt_reg{
@@ -181,8 +185,8 @@ p{
 
 
 .butt_reg:hover{
-    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
-    color: black;
+    background-color: #333;
+    color: white;
     transform: translateY(-5px); 
     box-shadow: 0 8px 16px black; 
 }
@@ -192,7 +196,7 @@ p{
     justify-content: center; 
     align-items: center; 
     height: 30px;
-    background: linear-gradient(#ff7f2a, #F5591E, #de4126);
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     letter-spacing: 2px;
@@ -205,7 +209,7 @@ p{
     justify-content: center; 
     align-items: center; 
     height: 60px;
-    background:#992b12;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     letter-spacing: 2px;

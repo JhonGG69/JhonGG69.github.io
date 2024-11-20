@@ -1,12 +1,11 @@
 body{
     margin:0;
     box-sizing: border-box;
-    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
+    background-color:white;
 }
-
 .header{
     display: flex;
-    background: #18b0bc;
+    background-color: #333;
     margin: 10px;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +60,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #333;
     transition: .4s;
     border-radius: 34px;
 }
@@ -79,7 +78,7 @@ body{
 }
 
 input:checked + .slider {
-    background-color: #0d6268;
+    background-color: #333;
 }
 
 input:checked + .slider:before {
@@ -196,7 +195,7 @@ input:checked + .slider:before {
 .footer{
     display: flex;
     height: 100px;
-    background: #0d6268;
+    background-color: #333;
     margin: 10px;
     justify-content: space-between;
     align-items: center;

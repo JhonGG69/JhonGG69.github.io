@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background-color: #f0f0f0;
     color: #333;
 }
 
 
 header {
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background-color: #333;
     color: white;
     padding: 30px;
     display: flex;
@@ -107,7 +107,7 @@ footer a:hover {
     margin-bottom: 10px;
 }
 .medios {
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background-color: #333;
     margin-left: 10px;
     margin-right: 10px;
     border: 1px solid #000000;
@@ -115,11 +115,15 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     border-radius: 30px;
+    color: white;
+  }
+  .medios a {
+    color: white;
   }
   .medios a:hover{
     color: white;
-      background-color: #830d34;
-      border: 2px solid #830d34;
+    background-color: #474747;
+     
       border-radius: 30px;
   }
   .links {
@@ -138,13 +142,13 @@ footer a:hover {
   .links a:hover{
   
     color: white;
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
-    border: 2px solid #830d34;
+    background-color: #474747;
+    
     
   
   }
   header {
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background-color: #333;
     padding: 10px;
     display: flex;
     margin-top: 10px;

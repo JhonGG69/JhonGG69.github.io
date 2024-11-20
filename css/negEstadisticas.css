@@ -1,13 +1,13 @@
 body{
     margin:0;
     box-sizing: border-box;
-    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
+    background:white;
 }
 
 
 .header{
     display: flex;
-    background: #ff7f2a,;
+    background-color: #333;
     margin: 10px;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@ body{
     padding: 0px 0px 0px 20px;
 }
 header {
-    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
+    background-color: #333;
     padding: 10px;
     display: flex;
     margin-top: 10px;
@@ -60,7 +60,7 @@ text-decoration: underline;
       .links a:hover{
       
         color: white;
-        background:linear-gradient(#00eafb, #18b0bc, #0d6268);
+        background-color: #333;
         border: 2px solid #830d34;
     }
       
@@ -97,7 +97,7 @@ text-decoration: underline;
 
 .title_neg{
 
-    background:linear-gradient(#00eafb, #18b0bc, #0d6268);              /*#c4144e* Rojo*/ /*#f3f2f2  gris*/
+    background-color: #333;        /*#c4144e* Rojo*/ /*#f3f2f2  gris*/
 
     background: white;                  /*#c4144e* Rojo*/ /*#f3f2f2  gris*/
 
@@ -118,8 +118,7 @@ text-decoration: underline;
 }
 
 .button_eliminar{
-
-    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
+    background-color: #333;
 
     background: #0d6268;
 
@@ -175,9 +174,9 @@ text-decoration: underline;
     display: flex;
     height: 100px;
 
-    background:linear-gradient(#00eafb, #18b0bc, #0d6268);
+    background-color: #333;
 
-    background: #0d6268;
+
 
     margin: 10px;
     justify-content: space-between;

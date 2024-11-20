@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background:white;
     color: #333;
 }
 
 
 header {
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background-color: #333;
     color: white;
     padding: 30px;
     display: flex;
@@ -40,7 +40,7 @@ header nav a:hover {
     margin: auto;
     padding:30px 30px;
     margin-bottom:3%;
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background-color: #333;
     border: 1px solid black;
     border-radius: 30px;
     margin-top: 55px;
@@ -117,7 +117,7 @@ footer a:hover {
     justify-content: center; 
     align-items: center; 
     height: 60px;
-    background:#992b12;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     letter-spacing: 2px;
@@ -149,13 +149,13 @@ footer a:hover {
   .links a:hover{
   
     color: white;
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background-color: #333;
     border: 2px solid #830d34;
     
   
   }
   header {
-    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    background-color: #333;
     padding: 10px;
     display: flex;
     margin-top: 10px;
