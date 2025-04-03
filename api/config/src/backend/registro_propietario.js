@@ -1,8 +1,9 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js"; 
+import bcrypt from "https://esm.sh/bcryptjs";
 
 // Conectar con Supabase
-const SUPABASE_URL = "https://bihypzdbzrgdaytaigwg.supabase.co";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJpaHlwemRienJnZGF5dGFpZ3dnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2NDY0NjUsImV4cCI6MjA1OTIyMjQ2NX0.8RaRdpBSWzYSqh8nIQm36a-PTWxiaU4zZO89c-MI44Y";
+const SUPABASE_URL = "https://wszzuzsuciipkjggymmi.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indzenp1enN1Y2lpcGtqZ2d5bW1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2OTUzODcsImV4cCI6MjA1OTI3MTM4N30.k0_WUwnfXqBon3h9Tpr6D1VEo1SNV1J0qJ2lE6jPUSU";
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -19,38 +20,37 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
 
-        // 🔹 Registrar usuario en Supabase Auth
-        const { data: authData, error: authError } = await supabase.auth.signUp({
-            email: email,
-            password: password
-        });
+        try {
+            // 🔹 Hashear la contraseña antes de guardarla en la BD
+            const hashedPassword = await bcrypt.hash(password, 10);
 
-        if (authError) {
-            console.error("Error registrando usuario en Auth:", authError.message);
-            alert("Error registrando usuario: " + authError.message);
-            return;
-        }
+            // 🔹 Insertar el usuario en la tabla 'propietario'
+            const { error: insertError } = await supabase
+                .from("propietario")
+                .insert([
+                    {
+                        nombre: name,
+                        primer_apellido: firstSurname,
+                        segundo_apellido: secondSurname,
+                        email: email,
+                        phone: phone,
+                        password: hashedPassword
+                    }
+                ]);
 
-        console.log("Usuario registrado en Auth:", authData);
+            if (insertError) {
+                throw new Error("Error guardando en la base de datos: " + insertError.message);
+            }
 
-        // 🔹 Insertar el usuario en la tabla personalizada 'propietario'
-        const { error: insertError } = await supabase
-            .from("propietario") 
-            .insert([
-                {
-                    nombre: name,
-                    primer_apellido: firstSurname,
-                    segundo_apellido: secondSurname,
-                    email: email,
-                    telefono: phone
-                }
-            ]);
+            alert("Registro exitoso. Redirigiendo...");
+            setTimeout(() => {
+                window.location.href = "/api/config/src/Registro_Negocio.html";
+            }, 100);
 
-        if (insertError) {
-            console.error("Error al insertar en la tabla propietario:", insertError.message);
-            alert("Error guardando en la base de datos: " + insertError.message);
-        } else {
-            window.location.href = "Registro_Negocio.html"; // Cambia esto por la URL real de tu página de registro de local.
+        } catch (error) {
+            console.error("Error:", error.message);
+            alert(error.message);
         }
     });
 });
+
