@@ -1,15 +1,14 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js";
+import bcrypt from "https://esm.sh/bcryptjs";
 
 // 🔹 Conectar con Supabase
-const SUPABASE_URL = "https://bihypzdbzrgdaytaigwg.supabase.co";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJpaHlwemRienJnZGF5dGFpZ3dnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2NDY0NjUsImV4cCI6MjA1OTIyMjQ2NX0.8RaRdpBSWzYSqh8nIQm36a-PTWxiaU4zZO89c-MI44Y";
+const SUPABASE_URL = "https://wszzuzsuciipkjggymmi.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indzenp1enN1Y2lpcGtqZ2d5bW1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2OTUzODcsImV4cCI6MjA1OTI3MTM4N30.k0_WUwnfXqBon3h9Tpr6D1VEo1SNV1J0qJ2lE6jPUSU";
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("login_form");
-    const forgotPasswordLink = document.getElementById("forgot_password");
 
-    // 🔹 Verificar si el formulario de login existe antes de agregar eventos
     if (form) {
         form.addEventListener("submit", async function (event) {
             event.preventDefault();
@@ -18,55 +17,41 @@ document.addEventListener("DOMContentLoaded", function () {
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
 
-            // 🔹 Autenticar con Supabase Auth
-            const { data, error } = await supabase.auth.signInWithPassword({
-                email: email,
-                password: password
-            });
+            try {
+                // 🔹 Buscar el usuario en la tabla 'propietario'
+                const { data: propietario, error } = await supabase
+                    .from("propietario")
+                    .select("*")
+                    .eq("email", email)
+                    .maybeSingle(); // Devuelve un solo resultado o null
 
-            if (error) {
-                console.error("Error iniciando sesión:", error.message);
-                alert("Error: " + error.message);
-                return;
-            }
+                if (error) throw new Error("Error al buscar usuario: " + error.message);
 
-            console.log("Usuario autenticado:", data);
-
-            // 🔹 Buscar en la tabla 'propietario'
-            let { data: propietario, error: propietarioError } = await supabase
-                .from("propietario")
-                .select("*")
-                .eq("email", email)
-                .limit(1)
-                .maybeSingle();
-            console.log("Resultado de búsqueda en propietario:", propietario, propietarioError);
-
-            if (propietario) {
-                console.log("Usuario es un propietario:", propietario);
-                localStorage.setItem("usuario", JSON.stringify(propietario)); // Guardar en localStorage
-                window.location.href = "perfilPropietario.html";
-                return;
-            }
-        });
-    }
-
-    // 🔹 Evento para "Olvidé mi contraseña"
-    if (forgotPasswordLink) {
-        forgotPasswordLink.addEventListener("click", async function (event) {
-            event.preventDefault(); // Evita que el enlace recargue la página
-
-            const email = prompt("Ingresa tu correo para recuperar la contraseña:");
-
-            if (email) {
-                const { error } = await supabase.auth.resetPasswordForEmail(email);
-                if (error) {
-                    alert("Error al enviar el correo: " + error.message);
-                } else {
-                    alert("Correo de recuperación enviado. Revisa tu bandeja de entrada.");
+                if (!propietario) {
+                    alert("Usuario no encontrado");
+                    return;
                 }
+
+                // 🔹 Comparar la contraseña ingresada con la hasheada en la BD
+                const passwordMatch = await bcrypt.compare(password, propietario.password);
+
+                if (!passwordMatch) {
+                    alert("Contraseña incorrecta");
+                    return;
+                }
+
+                // 🔹 Si la contraseña es correcta, guardar en localStorage y redirigir
+                localStorage.setItem("usuario", JSON.stringify(propietario));
+                alert("Inicio de sesión exitoso");
+                window.location.href = "/api/config/src/perfilPropietario.html";
+
+            } catch (error) {
+                console.error("Error iniciando sesión:", error.message);
+                alert(error.message);
             }
         });
     }
 });
+
 
 
