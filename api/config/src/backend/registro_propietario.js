@@ -1,10 +1,12 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js";
 
-// Conectar con Supabase
 const SUPABASE_URL = "https://bihypzdbzrgdaytaigwg.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJpaHlwemRienJnZGF5dGFpZ3dnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2NDY0NjUsImV4cCI6MjA1OTIyMjQ2NX0.8RaRdpBSWzYSqh8nIQm36a-PTWxiaU4zZO89c-MI44Y";
+
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
+console.log("Supabase inicializado:", supabase); // 🔴 Prueba si está funcionando
+/*
 // Asegurar que el DOM está cargado antes de agregar el evento
 document.addEventListener("DOMContentLoaded", function () {
     // Seleccionar el formulario por ID correcto
@@ -43,3 +45,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+*/
