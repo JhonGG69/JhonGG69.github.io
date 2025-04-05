@@ -18,32 +18,54 @@ document.addEventListener("DOMContentLoaded", function () {
             const password = document.getElementById("password").value;
 
             try {
-                // 🔹 Buscar el usuario en la tabla 'propietario'
-                const { data: propietario, error } = await supabase
+                // 🔹 Buscar primero en la tabla 'propietario'
+                const { data: propietario, error: errorProp } = await supabase
                     .from("propietario")
                     .select("*")
                     .eq("email", email)
-                    .maybeSingle(); // Devuelve un solo resultado o null
+                    .maybeSingle();
 
-                if (error) throw new Error("Error al buscar usuario: " + error.message);
+                if (errorProp) throw new Error("Error al buscar propietario: " + errorProp.message);
 
-                if (!propietario) {
-                    alert("Usuario no encontrado");
+                if (propietario) {
+                    // 🔐 Verificar la contraseña
+                    const validPassword = await bcrypt.compare(password, propietario.password);
+                    if (!validPassword) {
+                        alert("Contraseña incorrecta");
+                        return;
+                    }
+
+                    // ✅ Usuario propietario autenticado
+                    localStorage.setItem("usuario", JSON.stringify(propietario));
+                    window.location.href = "/api/config/src/perfilPropietario.html";
                     return;
                 }
 
-                // 🔹 Comparar la contraseña ingresada con la hasheada en la BD
-                const passwordMatch = await bcrypt.compare(password, propietario.password);
+                // 🔹 Si no está en propietario, buscar en 'usuario_comprador'
+                const { data: comprador, error: errorComp } = await supabase
+                    .from("usuario_comprador")
+                    .select("*")
+                    .eq("email", email)
+                    .maybeSingle();
 
-                if (!passwordMatch) {
-                    alert("Contraseña incorrecta");
+                if (errorComp) throw new Error("Error al buscar comprador: " + errorComp.message);
+
+                if (comprador) {
+                    // 🔐 Verificar la contraseña
+                    const validPassword = await bcrypt.compare(password, comprador.password);
+                    if (!validPassword) {
+                        alert("Contraseña incorrecta");
+                        return;
+                    }
+
+                    // ✅ Usuario comprador autenticado
+                    localStorage.setItem("usuario", JSON.stringify(comprador));
+                    window.location.href = "/api/config/src/perfilComprador.html";
                     return;
                 }
 
-                // 🔹 Si la contraseña es correcta, guardar en localStorage y redirigir
-                localStorage.setItem("usuario", JSON.stringify(propietario));
-                alert("Inicio de sesión exitoso");
-                window.location.href = "/api/config/src/perfilPropietario.html";
+                // ❌ Si no se encuentra en ninguna tabla
+                alert("Usuario no encontrado en el sistema");
 
             } catch (error) {
                 console.error("Error iniciando sesión:", error.message);
@@ -52,6 +74,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-
 
