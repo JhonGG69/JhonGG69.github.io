@@ -1,0 +1,21 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ] 
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Replace environment variables
+        run: |
+          find . -type f -name "*.js" -exec sed -i 's|@@SUPABASE_URL@@|${{ secrets.SUPABASE_URL }}|g' {} \;
+          find . -type f -name "*.js" -exec sed -i 's|@@SUPABASE_ANON_KEY@@|${{ secrets.SUPABASE_ANON_KEY }}|g' {} \;
+      
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: .
