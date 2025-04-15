@@ -1,0 +1,258 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+    background:white;
+}
+
+.header{
+    display: flex;
+    background-color: #333;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 4px 8px black;
+}
+
+.header_tittle{
+    display: flex;
+    color: white;
+    padding: 0px 0px 0px 20px;
+}
+
+.profile_about{
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 4px 8px black;
+}
+
+
+
+.itemlink{
+    padding-right: 35px;
+    padding-left: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+.itemlink:hover{
+    text-decoration: underline;
+}
+
+.headerlink_login{
+    text-decoration: none;
+    color: black;
+}
+
+.headerlink_login:hover{
+    text-decoration: underline;
+}
+
+.headerlink_cerrars{
+    padding-right: 25px ;
+    color: white;
+    text-decoration: none;
+}
+
+.headerlink_register:hover{
+    text-decoration: underline;
+}
+
+.profile_comment {
+    display: flex;
+    margin: 10px;
+}
+
+.div_profile {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.flex_imgProfile {
+    display: flex;
+    margin-right: 20px;
+}
+
+.img_profile {
+    padding-top: 15%;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px; 
+}
+
+.comment_box {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: flex-start; 
+    padding: 10px; 
+    gap: 10px;
+    background-color: white;
+    border-radius: 25px;
+    gap: 20px;
+}
+
+.comment_head {
+    background: white;
+    border-bottom: 1px solid #E5E5E5;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 2px 3px black;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 30%;
+    border-radius:5px;
+    padding: 5px;
+}
+
+.comment_tittle{
+    text-decoration: none;
+    color: white;
+}
+.comment_tittle:hover{
+    text-decoration: underline;
+}
+
+.comment_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    content: "";
+    display: block;
+    clear: both;
+    width: 50%;
+    
+}
+
+.comment_content {
+    background: #fff;
+    padding: 0px;
+    border-radius: 5px 5px 10px 10px;
+    padding: 5px;
+    background-color: #f2f2f2; border-width: 1px; border-style: solid; 
+    border-color: #ccc;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px; color: #333;
+    
+}
+
+.title_comm_ship{
+    display: flex;
+    align-items: center;
+}
+
+.profile_info{
+    padding-top: 3%;
+}
+
+.profile_info h2{
+    color: white;
+}
+
+.profile_info p{
+    color: white;
+}
+
+.box_favorites{
+    background: white;
+    color: black;
+    width: 50%;
+    text-align: center;
+    margin: 10px;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 2px 3px black;
+}
+
+.box_shipments{
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    margin: 10px;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 2px 3px black;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.content_fav{
+    border: 5px white solid;
+    display: flex;
+    width: 50%;
+    border-radius: 25px;
+}
+.content_ship{
+    width: 48%;
+    border: 5px white solid;
+    align-items: center;
+    display: flex;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.unlist_productShip li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc
+}
+.item_productlink{
+    text-decoration: none;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.unlist_productShip:hover{
+    text-decoration: underline;
+}
+
+.item_seguimiento{
+    margin-left: 20px;
+}
+
+.div_productImg{
+align-items: center;
+}
+.content_ship img{
+    margin-bottom: 10px;
+    height: auto;
+    width: 10%;
+    align-items: center;
+}
+
+.content_store{
+    margin-right: 15px;
+    width: 50%;
+    align-items: center;
+}
+
+
+.content_store h3{
+    text-align: center;
+}
+
+.content_product h3{
+    text-align: center;
+    margin-left: 100px;
+}
+
+.footer a{
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}

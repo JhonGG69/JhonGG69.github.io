@@ -1,0 +1,221 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+    background-color:white;
+}
+.header{
+    display: flex;
+    background-color: #333;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 4px 8px black;
+}
+
+.header_tittle{
+    display: flex;
+    color: white;
+    padding: 0px 0px 0px 20px;
+}
+
+.itemlink{
+    padding-right: 35px;
+    padding-left: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+.itemlink:hover{
+    text-decoration: underline;
+}
+
+.cerar_sesion{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+/* styles.css */
+.switch {
+    margin-left: 30px;
+    position: relative;
+    display: inline-block;
+    width:38px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #333;
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px);
+}
+
+.opciones{
+    margin-bottom: 30px;
+    display:block;
+}
+
+
+.headerlink_login:hover{
+    text-decoration: underline;
+}
+
+.headerlink_register{
+    padding-right: 25px ;
+    color: black;
+    text-decoration: none;
+}
+
+.headerlink_register:hover{
+    text-decoration: underline;
+}
+
+.flexbox {
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+    border-radius: 25px;
+}
+
+.flex-item_profile {
+    margin: 0;
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    border-radius: 25px;
+}
+.flex-item{
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    width: 60%;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 4px 8px black;
+}
+
+.div_profileimg {
+    border-radius: 100%;
+    padding-right: 4%;
+    width: 150px;
+    height: 150px; 
+}
+
+.flexbox h2{
+    color: white;
+}
+
+.flexbox p{
+    color: white;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.business{
+    margin-left: 10px;
+    padding: 0px 0px 200px 20px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+
+.mybusiness {
+    margin: 10px;
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
+}
+.business{
+    width: 20%;
+    margin: 0;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 4px 8px black;
+}
+
+.business_img {
+    border-radius: 25px;
+    background-color: white;
+    
+}
+
+.bloc_business{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;  
+    padding: 20px;
+}
+
+.bloc_business div{
+    border-radius: 25px;
+}
+
+.business_img img{
+    width: 70%;
+}
+
+.footer{
+    display: flex;
+    height: 100px;
+    background-color: #333;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:25px ;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0 4px 8px black;
+}
+
+.footer a{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+select{
+    display: block;
+}

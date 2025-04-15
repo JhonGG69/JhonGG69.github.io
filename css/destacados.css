@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+}
+header {
+  background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+  padding: 10px;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
+header h1 {
+  font-size: 1.5em;
+  font-family:"ProtestStrike-Regular";
+  color: white;
+}
+.links {
+  padding-left:53%;
+  padding-top: 2%;
+
+}
+.links a{
+  text-decoration: none;
+
+ 
+  border-radius: 30px;
+  color:white;
+
+}
+.links a:hover{
+
+  color: white;
+  background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+  border: 2px solid #830d34;
+  
+
+}
+  .contenedor {
+    width: 98%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #f3f2f2;
+    border-radius: 30px;
+  }
+  .producto {
+    padding-left: 20px;
+    font-size: 40px;
+    
+  }
+  .producto-imagen {
+    padding: 30px;
+    
+  }
+  .producto-imagen img {
+    width: 200px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 30px;
+    
+  }
+  .imagen{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .Titulo_N{
+    font-size: 30px;
+  }
+  .info {
+    margin-top: 2%;
+    padding: 10px;
+    border: 1px solid #000000;
+    display: inline-flex;
+    border-radius: 30px;
+  }
+  .Info-Negocio{
+    display: inline-block;
+    padding-left: 20px;
+  }
+  .ubicacion {
+    padding-left: 400px;
+    margin-right: 90px;
+  }
+  .medios {
+    background:linear-gradient(#ff7f2a, #F5591E, #992b12);
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+  }
+  .medios a:hover{
+    color: white;
+      background-color: #830d34;
+      border: 2px solid #830d34;
+      border-radius: 30px;
+  }
+  .as {
+    color: white;
+    text-decoration: none;
+  }
