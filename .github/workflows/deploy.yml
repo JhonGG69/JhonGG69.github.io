@@ -15,6 +15,9 @@ jobs:
           find . -type f -name "*.js" -exec sed -i 's|@@SUPABASE_URL@@|${{ secrets.SUPABASE_URL }}|g' {} \;
           find . -type f -name "*.js" -exec sed -i 's|@@SUPABASE_ANON_KEY@@|${{ secrets.SUPABASE_ANON_KEY }}|g' {} \;
 
+      - name: Mostrar contenido de registro_propietario.js
+        run: cat api/config/src/backend/registro_propietario.js
+
       - name: Check environment variables (for debugging)
         run: |
           echo "SUPABASE_URL: ${{ secrets.SUPABASE_URL }}"  # Esto muestra la URL para verificar si está correcta
