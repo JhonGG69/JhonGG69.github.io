@@ -16,7 +16,7 @@ jobs:
       - name: Verify replaced values
         run: |
           # Verifica el contenido de los archivos para ver si los reemplazos fueron correctos
-          cat <pi/config/src/backend/registro_propietario.js
+          cat api/config/src/backend/registro_propietario.js
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
