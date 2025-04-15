@@ -13,10 +13,9 @@ jobs:
         run: |
           find . -type f -name "*.js" -exec sed -i 's|@@SUPABASE_URL@@|${{ secrets.SUPABASE_URL }}|g' {} \;
           find . -type f -name "*.js" -exec sed -i 's|@@SUPABASE_ANON_KEY@@|${{ secrets.SUPABASE_ANON_KEY }}|g' {} \;
-      - name: Verify replaced values
+      - name: Check environment variables (for debugging)
         run: |
-          # Verifica el contenido de los archivos para ver si los reemplazos fueron correctos
-          echo $SUPABASE_URL
+          echo "SUPABASE_URL: $SUPABASE_URL"  # Esto imprime la URL de Supabase para verificar si está correcta
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
