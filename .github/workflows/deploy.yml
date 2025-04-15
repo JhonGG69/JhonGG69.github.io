@@ -9,11 +9,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       
-      - name: Replace environment variables
+      - name: Reemplazar las variables Supabase en tu código
         run: |
-          # Reemplazar las variables en los archivos .js
-          find . -type f -name "*.js" -exec sed -i 's|@@SUPABASE_URL@@|${{ secrets.SUPABASE_URL }}|g' {} \;
-          find . -type f -name "*.js" -exec sed -i 's|@@SUPABASE_ANON_KEY@@|${{ secrets.SUPABASE_ANON_KEY }}|g' {} \;
+          find ./api/config/src/backend -type f -name "*.js" -exec sed -i 's|@@SUPABASE_URL@@|${{ secrets.SUPABASE_URL }}|g' {} \;
+          find ./api/config/src/backend -type f -name "*.js" -exec sed -i 's|@@SUPABASE_ANON_KEY@@|${{ secrets.SUPABASE_ANON_KEY }}|g' {} \;
 
       - name: Mostrar contenido de registro_propietario.js
         run: cat api/config/src/backend/registro_propietario.js
