@@ -1,191 +1,101 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f5f5f5;
-
-  background: linear-gradient(#00eafb, #18b0bc, #0d6268);
-}
-header {
-  background: linear-gradient(#00eafb, #18b0bc, #0d6268);
-  padding: 10px;
-
+ body {
+   margin: 0;
+  font-family: 'KoHo-Regular', sans-serif;
+  background-color: #1A1A1A;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
+  height: 100vh;
+  position: relative; /* Para posicionar el LPD */
 }
 
-.form-container {
-  max-width: 500px;
-  width: 100%;
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.lpd-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.form-header {
+.container {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
   text-align: center;
-  margin-bottom: 2rem;
-}
+ }
 
-.form-header h1 {
-  font-size: 2rem;
-  color: #333;
-}
-
-.form-header p {
-  color: #666;
-  font-size: 1rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: 'RozhaOne-Regular';
+  font-weight: bold;
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
-.espacio {
-  background: linear-gradient(#00eafb, #18b0bc, #0d6268);
-  padding-bottom: 10%;
-  padding-top: 21%;
-  margin-top: 24px;
-  margin-left: 20px;
-  border: 1px solid black;
-  border-radius: 30px;
-}
-.negocio-contenedor {
-  background: linear-gradient(#00eafb, #18b0bc, #0d6268);
-  padding-right: 30%;
-  padding-left: 13px;
-  border: 1px solid black;
-  border-radius: 30px;
-}
-.propietario{
-    padding-top: 10px;
-    font-family:"ProtestStrike-Regular";
-    color: black;
-}
-.texto {
-  padding-top: 10%;
-  padding-bottom: 10px;
-}
-.input {
-  padding-right: 89%;
-  border: 1px solid white;
-  border-radius: 30px;
-}
-.boton {
-  margin-top: 28%;
-  margin-bottom: 8%;
-  padding: 10px 30px 10px 30px;
-  border: 1px solid black;
-  border-radius: 30px;
-}
-.boton:hover{
-  background-color: #b8faff;
-  color: black;
-  transform: translateY(-5px); 
-  box-shadow: 0 4px 8px black; 
-}
-.tengo {
-  padding-left: 30%;
-  text-decoration: none;
-  color: white;
-}
-
-.medios {
-  background: linear-gradient(#00eafb, #18b0bc, #0d6268);
-  margin-left: 10px;
-  margin-right: 10px;
-  border: 1px solid #000000;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 30px;
-}
-
-.as {
-    color: white;
-    text-decoration: none;
-
-}
-.form-group label {
+label {
   display: block;
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 0.5rem;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
-.form-group input,
-.form-group textarea {
+input {
   width: 100%;
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #333;
+input::placeholder {
+  color: #999;
+  font-size: 12px;
 }
 
-textarea {
-  resize: none;
-}
-
-.btn-submit {
-  background-color: #333;
-  color: #fff;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #170CAC;
+  color: #FFFFFF;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
-.btn-submit:hover {
-  background-color: #555;
+button:hover {
+  background-color: #120986;
 }
 
-@media (max-width: 600px) {
-  .form-container {
-    padding: 1.5rem;
-  }
-
-  .form-header h1 {
-    font-size: 1.8rem;
-  }
-
-  .form-header p {
-    font-size: 0.9rem;
-  }
-
+.login-link {
+  font-size: 14px;
+  margin-top: 20px;
+  font-family: 'KoHo-Bold';
 }
 
-.links a:hover{
-
-    color: white;
-    background-color: #830d34;  
-}
-
-a{
-  
+.login-link a {
+  color: blue;
   text-decoration: none;
-  color: white;
+}
+
+.footer-links {
+  margin-top: 20px;
+  font-family: 'KoHo-Regular';
+}
+
+.footer-links a {
+  color: #424242;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+  font-family: 'KoHo-Regular';
 }
