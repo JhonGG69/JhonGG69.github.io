@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Form</title>
-  <link rel="stylesheet" href="/css/Regis_prop.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar tu Negocio</title>
+    <link rel="stylesheet" href="/css/Registro_Negocio.css">
+    <link rel="stylesheet" href="/fonts.css">
 </head>
 <body>
-  <main class="form-container">
-    <section class="form-header">
-      <h1>Registro negocio</h1>
-    </section>
-    <section class="form-body">
-      <form action="#" method="POST">
-        <div class="form-group">
-          <label for="name">Nombre negocio</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <div class="lpd-header">LPD</div>
+    <div class="container">
+        <h2>Registrar tu negocio</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre-negocio">Nombre de tu negocio/servicio</label>
+                <input type="text" id="nombre-negocio">
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" placeholder="Ingresa una dirección, solo si tienes una planta física o si es de utilidad para el servicio que brindas">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono">
+            </div>
+            <button type="submit">Regístrate</button>
+        </form>
+        <p class="login-link">¿Ya tienes una cuenta? <a href="/api/config/login_form.html">Iniciar sesión →</a></p>
+        <div class="footer-links">
+            <a href="#">Ayuda</a>
+            <a href="#">Términos</a>
+            <a href="#">Privacidad</a>
         </div>
-        <div class="form-group">
-          <label for="surname">Telefono negocio</label>
-          <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email negocio</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Ubicación/dirección</label>
-            <input type="password" id="password" name="password" placeholder="****" required>
-        </div>
-      <a href="/api/config/src/negEstadisiticas.html" class="btn-submit">Registrar</a>
-      </form>
-    </section>
-  </main>
-</body>
-</html>
+    </div>
+  </body>
+ </html>

@@ -1,140 +1,114 @@
-/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.5;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  .nav a:hover {
-    color: #ff7f2a;
-  }
-  
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 80px); /* Ajusta para compensar header/footer */
-    padding: 20px;
-  }
-  
-  .form-container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  .main-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #666;
-  }
-  
-  .form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .btn-primary {
-    display: inline-block;
-    width: 100%;
-    padding: 10px;
-    background-color: #ff7f2a;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background-color: #f5591e;
-  }
-  
-  .links {
-    margin-top: 15px;
-  }
-  
-  .links a {
-    color: #ff7f2a;
-    text-decoration: none;
-    margin: 0 5px;
-    font-size: 0.9rem;
-  }
-  
-  .links a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .footer-nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  
-  .footer-nav a:hover {
-    text-decoration: underline;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
 
-  a{
-    color: white;
-    text-decoration: none;
-  }
+body {
+  background: #1A1A1A;
+  color: #0A0A0A;
+}
+
+header {
+  padding: 2rem;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 1rem;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 510px;
+  width: 100%;
+  text-align: left;
+}
+
+.card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'RozhaOne-Regular';
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-family: 'KoHo-Bold';
+}
+
+input {
+  margin-top: 0.3rem;
+  padding: 0.6rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.75rem;
+  color: #444;
+  margin-top: 0.3rem;
+  font-family: 'KoHo-Medium';
+}
+
+button {
+  background-color: #E02828;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  font-family: 'KoHo_Bold';
+}
+
+button:hover {
+  background-color: #C41C1C;
+}
+
+.opcion {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.opcion a {
+  color: blue;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  font-family: 'KoHo.Medium';
+}
+
+footer a {
+  color: gray;
+  text-decoration: none;
+}

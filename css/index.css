@@ -1,3 +1,9 @@
+/* Reset básico */
+a{
+  color: inherit;         /* Usa el color del texto del contenedor padre */
+  text-decoration: none; 
+} 
+
 * {
   margin: 0;
   padding: 0;
@@ -5,130 +11,273 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  font-family: 'KoHo-Bold';
+  font-weight: normal;
+  font-size: 24px;
 }
 
+/* Header */
 header {
-  background: #f5f5f5;
-  padding: 1.5rem;
-}
-
-.navbar {
+  font-family: 'KoHo-Medium';
+  background-color: #1A1A1A;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+.logo {
+  font-size: 22px;
+  font-weight: bold;
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.1rem;
-}
-
-.auth-buttons button {
-  margin-left: 0.8rem;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-}
-
-.btn-primary {
-  background-color: #333;
-  color: #fff;
-  border: none;
+.menu-buttons button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.btn-secondary {
-  background-color: #333;
-  color: white;
-  border: 2px solid #333;
-  cursor: pointer;
-  text-decoration: none;
+.menu-buttons button:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+title{
+  font-family: 'RozhaOne-Regular';
+  font-size: large;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'RozhaOne';
+  background-color: #1A1A1A;
+  color: #FFFFFF;
 }
 
 .hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: #eee;
+  background-image: url('/imgs/Home_1.jpg');
+  height: 624px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
 }
 
-.hero-buttons button {
-  margin: 1rem;
-}
-
-.features {
-  padding: 3rem 2rem;
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.feature-card {
-  padding: 2rem;
-  background: #f5f5f5;
-  border: 1px solid #ddd;
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.extra-section {
-  padding: 4rem 2rem;
-  background: #f9f9f9;
-  text-align: center;
+.buttons {
+  margin-top: 20px;
 }
 
-.image-placeholder {
-  width: 100%;
-  height: 300px;
-  background: #ddd;
-  margin-top: 2rem;
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
 }
 
-footer {
-  background: #333;
-  color: #fff;
-  padding: 3rem;
+.btn:hover {
+  transform: scale(1.1);
 }
 
-.footer-grid {
+.btn.white {
+  background-color:#FFFFFF;
+  color: black;
+}
+
+.btn.red {
+  background-color: #E02828;
+  color: #FFFFFF;
+}
+
+.divider {
+  height: 20px;
+  background-color: #1A1A1A;
+}
+
+.split-section {
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  height: 640px;
 }
 
-.footer-grid ul {
-  list-style: none;
+.split {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: filter 0.4s ease;
 }
 
-.footer-grid a {
+.split:hover {
+  filter: brightness(80%);
+}
+
+.left {
+  background-image: url('/imgs/Home_2.jpg');
+}
+
+.right {
+  background-image: url('/imgs/Home_3.jpg');
+}
+
+.overlay {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.pasos {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.paso-col {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.paso-col h3 {
+  font-family: 'RozhaOne-Regular';
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #E33B3B;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.paso {
+  margin-bottom: 30px;
+  background-color: #1A1A1A;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.paso:hover {
+  transform: translateY(-5px);
+  background-color: #1a1a1a;
+}
+
+.paso h4 {
+  font-family: 'RozhaOne-Regular';
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.paso p {
+  font-family: 'KoHo-Medium';
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.footer {
+  background-color: #0A0A0A;
+  color: #D6D6D6;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "KoHo-Medium";
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #D6D6D6;
+  margin: 0 10px;
   text-decoration: none;
-  color: #fff;
+  transition: color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
+.footer-links a:hover {
+  color: #D6D6D6;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #D6D6D6;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #D6D6D6;
+  transform: scale(1.2);
+}
+
+
+/* resposive*/
+@media (max-width: 1024px) {
+  /* ... otros estilos previos ... */
+
+  .pasos {
     flex-direction: column;
-    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
   }
 
-  .footer-grid {
-    flex-direction: column;
-    align-items: center;
+  .paso-col {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .paso {
+    text-align: left;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .paso-col h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+  }
+
+  .paso h4 {
+    font-size: 1.1rem;
+  }
+
+  .paso p {
+    font-size: 0.95rem;
   }
 }
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-
