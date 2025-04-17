@@ -1,107 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/fonts.css">
-    <title>LaPlazaDigital</title>
+  <meta charset="UTF-8">
+  <title>La Plaza Digital</title>
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/fonts.css">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     <header>
-        <nav class="navbar">
-          <div class="logo">La Plaza Digital</div>
-          <div class="auth-buttons">
-            <button class="btn-secondary"><a href="/api/config/login_form.html">Ingresar</a></button>
-            <button class="btn-secondary"><a href="/api/config/Regis_prop.html">Vender</a></button>
-            <button class="btn-primary"><a href="/api/config/register_form.html"> Registrar</a></button>
-          </div>
-        </nav>
-    </header>
-    
-    <main>
-        
-        <section class="hero">
-          <h1>Descubre La Plaza Digital</h1>
-          <p>Conecta con compradores y vendedores en una plataforma que impulsa tu negocio.</p>
-          <div class="hero-buttons">
-            <button class="btn-primary">Comienza ahora</button>
-            <button class="btn-secondary">Saber más</button>
-          </div>
-        </section>
-    
-        <section class="features">
-          <h2>Características principales</h2>
-          <p>Todo lo que necesitas para destacar en el mercado:</p>
-          <div class="feature-grid">
-            
-            <div class="feature-card">
-              <p>"Diseño intuitivo"</p>
-              <h3>Herramientas Personalizables</h3>
-              <p>Crea tu tienda online en minutos con nuestras plantillas fáciles de usar.</p>
-            </div>
-            <div class="feature-card">
-              <p>"Impulsa tu negocio"</p>
-              <h3>Marketing Integrado</h3>
-              <p>Accede a herramientas de promoción para aumentar tus ventas.</p>
-            </div>
-            <div class="feature-card">
-              <p>"Control total"</p>
-              <h3>Análisis de Datos</h3>
-              <p>Obtén información detallada sobre el rendimiento de tu negocio.</p>
-            </div>
-            <div class="feature-card">
-              <p>"Acceso global"</p>
-              <h3>Conexión en cualquier lugar</h3>
-              <p>Gestiona tus productos y ventas desde cualquier dispositivo.</p>
-            </div>
-            <div class="feature-card">
-              <p>"Seguridad primero"</p>
-              <h3>Protección de Datos</h3>
-              <p>Transacciones seguras y cifrado avanzado para la tranquilidad de todos.</p>
-            </div>
-            <div class="feature-card">
-              <p>"Estamos contigo"</p>
-              <h3>Soporte 24/7</h3>
-              <p>Resolvemos tus dudas y problemas a cualquier hora.</p>
-            </div>
-          </div>
-        </section>
-    
-        <section class="extra-section">
-          <h2>Nuestra Misión</h2>
-          <p>
-            Ayudamos a emprendedores y pequeños negocios a digitalizarse, conectar con más clientes y maximizar sus oportunidades de crecimiento.
-          </p>
-          <div class="image-placeholder"></div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer-grid">
-          <div class="logo">La Plaza Digital</div>
-          <ul>
-            <li><strong>Para Comerciantes</strong></li>
-            <li><a href="#">Crea tu Tienda</a></li>
-            <li><a href="#">Promociona tus Productos</a></li>
-            <li><a href="#">Analiza tus Ventas</a></li>
-            <li><a href="#">Expande tu Alcance</a></li>
-          </ul>
-          <ul>
-            <li><strong>Explora</strong></li>
-            <li><a href="#">Novedades</a></li>
-            <li><a href="#">Categorías</a></li>
-            <li><a href="#">Tendencias</a></li>
-            <li><a href="#">Ofertas Exclusivas</a></li>
-          </ul>
-          <ul>
-            <li><strong>Recursos</strong></li>
-            <li><a href="#">Guías</a></li>
-            <li><a href="#">Soporte Técnico</a></li>
-            <li><a href="#">Historias de Éxito</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
-          </ul>
+        <div class="logo">LPD</div>
+        <div class="menu-buttons">
+          <button class="outline"><a href="/api/config/Regis_select.html">REGÍSTRATE</a></button>
+          <button class="outline"><a href="/api/config/login_form.html">INICIAR SESIÓN</a></button>
         </div>
-    </footer>
+      </header>
+  <!-- Sección principal -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1 class="title">LA PLAZA DIGITAL</h1>
+      <p>Una nueva forma de impulsar los emprendimientos más fáciles y de un solo clic</p>
+      <div class="buttons">
+        <button class="btn white">Historia</button>
+        <button class="btn red"><a href="/api/config/src/Producto_Descripción.html">Ingresar</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Separador visual -->
+  <div class="divider"></div>
+
+  <!-- Sección Vender / Comprar -->
+  <section class="split-section">
+    <div class="split left">
+      <div class="overlay">
+        <h2>VENDEDOR</h2>
+        <button class="btn red"><a href="/api/config/login_form.html">Ingresar</a></button>
+      </div>
+    </div>
+    <div class="split right">
+      <div class="overlay">
+        <h2>COMPRAR</h2>
+        <button class="btn red"><a href="/api/config/src/Producto_Descripción.html">Ingresar</a></button>
+      </div>
+    </div>
+  </section>
+  <!-- Sección Final: Pasos -->
+<section class="pasos">
+  <div class="paso-col">
+    <h3>Facil de vender</h3>
+    <div class="paso">
+      <h4>📝 Crea tu cuenta</h4>
+      <p>Regístrate gratis y configura tu perfil como emprendedor.</p>
+    </div>
+    <div class="paso">
+      <h4>🏪 Personaliza tu tienda</h4>
+      <p>Agrega productos, fotos, precios y una descripción llamativa.</p>
+    </div>
+    <div class="paso">
+      <h4>🚀 Comienza a vender</h4>
+      <p>Publica tu tienda y recibe pedidos fácilmente.</p>
+    </div>
+  </div>
+  <div class="paso-col">
+    <h3>Facil de comprar</h3>
+    <div class="paso">
+      <h4>🔍 Explora tiendas locales</h4>
+      <p>Busca productos de pequeños comercios en tu ciudad.</p>
+    </div>
+    <div class="paso">
+      <h4>🛒 Haz tu pedido</h4>
+      <p>Selecciona lo que necesitas y agrégalo a tu carrito.</p>
+    </div>
+    <div class="paso">
+      <h4>📦 Recíbelo o recógelo</h4>
+      <p>Elige entrega a domicilio o recoge directamente con el vendedor.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 La Plaza Digital. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#">Términos y condiciones</a>
+      <a href="#">Política de privacidad</a>
+      <a href="#">Contacto</a>
+    </div>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

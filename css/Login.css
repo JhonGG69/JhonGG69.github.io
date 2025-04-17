@@ -1,139 +1,103 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.5;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  .nav a:hover {
-    color: #ff7f2a;
-  }
-  
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 80px); /* Ajusta para compensar header/footer */
-    padding: 20px;
-  }
-  
-  .form-container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  .main-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #666;
-  }
-  
-  .form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .btn-primary {
-    display: inline-block;
-    width: 100%;
-    padding: 10px;
-    background-color: #ff7f2a;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background-color: #f5591e;
-  }
-  
-  .links {
-    margin-top: 15px;
-  }
-  
-  .links a {
-    color: #ff7f2a;
-    text-decoration: none;
-    margin: 0 5px;
-    font-size: 0.9rem;
-  }
-  
-  .links a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .footer-nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  
-  .footer-nav a:hover {
-    text-decoration: underline;
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #1a1a1a;
+  color: black;
+}
+
+header {
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 150px;
+  min-height: 100vh;
+}
+
+.login-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px 60px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-card h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.olvido {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.olvido a {
+  font-size: 12px;
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+.btn-ingresar {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #b22222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registro-link {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+  .login-card {
+    padding: 30px 20px;
   }
 
-  a{
-    text-decoration: none;
-    color: white;
+  .login-card h2 {
+    font-size: 24px;
   }
+
+  .btn-ingresar {
+    font-size: 14px;
+  }
+}

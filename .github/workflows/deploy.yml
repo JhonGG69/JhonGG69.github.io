@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Reemplazar las variables Supabase en tu código
+        run: |
+          find ./api/config/src/backend -type f -name "*.js" -exec sed -i 's|@@SUPABASE_URL@@|${{ secrets.SUPABASE_URL }}|g' {} \;
+          find ./api/config/src/backend -type f -name "*.js" -exec sed -i 's|@@SUPABASE_ANON_KEY@@|${{ secrets.SUPABASE_ANON_KEY }}|g' {} \;
+
+      - name: Mostrar contenido de registro_propietario.js
+        run: cat api/config/src/backend/registro_propietario.js
+
+      - name: Check environment variables (for debugging)
+        run: |
+          echo "SUPABASE_URL: ${{ secrets.SUPABASE_URL }}"  # Esto muestra la URL para verificar si está correcta
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: .
+

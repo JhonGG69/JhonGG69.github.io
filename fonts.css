@@ -9,3 +9,38 @@
     src: url("fonts/ProtestStrike-Regular.ttf") format("truetype");
     font-weight: 400px;
 }
+
+@font-face {
+    font-family: 'RozhaOne-Regular';
+    src: url('/fonts/RozhaOne-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KoHo-Regular';
+    src: url('/fonts/KoHo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'KoHo-Bold';
+    src: url('/fonts/KoHo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Koho-Italic';
+    src: url('/fonts/KoHo-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'KoHo-Medium';
+    src: url('/fonts/KoHo-Medium.ttf') format('truetype');
+    font-weight: 200;
+    font-style:normal;
+  }
