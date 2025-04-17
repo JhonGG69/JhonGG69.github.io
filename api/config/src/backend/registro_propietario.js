@@ -9,17 +9,28 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("propietario_form");
 
-    form.addEventListener("submit", async function (event) {
-        event.preventDefault(); 
+    function validarEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+        return regex.test(email);
+    }
+    if (form) {
+        form.addEventListener("submit", async function (event) {
+            event.preventDefault(); 
 
-        // Obtener valores del formulario
-        const name = document.getElementById("name").value;
-        const firstSurname = document.getElementById("first_surname").value; 
-        const secondSurname = document.getElementById("last_name").value; 
-        const phone = document.getElementById("phone").value; 
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
+            // Obtener valores del formulario
+            const name = document.getElementById("name").value;
+            const firstSurname = document.getElementById("first_surname").value; 
+            const secondSurname = document.getElementById("last_name").value; 
+            const phone = document.getElementById("phone").value; 
+            let email = document.getElementById("email").value;
+            email = email.trim().toLowerCase();  // Normaliza el email
+            const password = document.getElementById("password").value;
 
+            if (!validarEmail(email)) {
+                alert("Por favor, ingresa un correo válido (ej: ejemplo@dominio.com)");
+                return;
+            }
+        
         try {
             // 🔹 Hashear la contraseña antes de guardarla en la BD
             const hashedPassword = await bcrypt.hash(password, 10);
@@ -52,5 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
             alert(error.message);
         }
     });
+}
 });
 
