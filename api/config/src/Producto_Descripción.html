@@ -1,73 +1,420 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Plaza Digital - Descripción de Producto</title>
-    <link rel="stylesheet" href="/css/Producto_Descripción.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Ventas</title>
+  <link rel="stylesheet" href="/css/Producto_Descripción.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>LA<br>PLAZA<br>DIGITAL</h1>
-        </div>
-        <div class="links">
-            <a href="Categorias.html">Categorías</a>
-            <a href="Favoritos.html">Favoritos</a>
-            <a href="Comentarios.html">Comentarios</a>
-            <a href="../login_form.html">Iniciar sesión</a>
-            <a href="../register_form.html">Registrarse</a>
-        </div>
-    </header>
-    <div class="contenedor">
-        <h2 class="producto">Producto 1</h2>
-        <div class="producto-contenedor">
-            <div class="producto-imagen">
-                <img src="imgs/producto1.png" alt="Producto 1">
-            </div>
-            <div class="producto-descripcion">
-                <h1>Descripción</h1>
-                <div class="des">
-                    <p>Es un hecho conocido que un lector se distraerá con el contenido legible de una página cuando mira su diseño. El propósito de usar Lorem Ipsum.</p>
-                    <p>Es un hecho conocido que un lector se distraerá con el contenido legible de una página cuando mira su diseño. El propósito de usar Lorem Ipsum.</p>
-                </div>
-                <div class="info">
-                    <p><strong>Disponible en:</strong> ejemplo</p>
-                    <p><strong class="ubicacion">Barrio:</strong> ejemplo</p>
-                </div>
-                <a href="compra.html" class="boton-compra">Comprar</a>
-            </div>
-        </div>
+  <div class="page-wrapper">
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">LPD</div>
+    <input type="text" class="search-bar" placeholder="Buscar productos..." />
+    <div class="icons">
+      <i class="cart">🛒</i>
+      <i class="user">👤</i>
     </div>
-    <div class="contenedor">
-        <h2 class="producto">Producto 2</h2>
-        <div class="producto-contenedor">
-            <div class="producto-imagen">
-                <img src="imgs/producto2.png" alt="Producto 2">
-            </div>
-            <div class="producto-descripcion">
-                <h1>Descripción</h1>
-                <div class="des">
-                    <p>Es un hecho conocido que un lector se distraerá con el contenido legible de una página cuando mira su diseño. El propósito de usar Lorem Ipsum.</p>
-                    <p>Es un hecho conocido que un lector se distraerá con el contenido legible de una página cuando mira su diseño. El propósito de usar Lorem Ipsum.</p>
-                </div>
-                <div class="info">
-                    <p><strong>Disponible en:</strong> ejemplo</p>
-                    <p><strong class="ubicacion">Barrio:</strong> ejemplo</p>
-                </div>
-                <a href="compra.html" class="boton-compra">Comprar</a>
-            </div>
+  </header>
+
+  <!-- Categorías -->
+  <nav class="navbar">
+    <a href="#">Productos</a>
+    <a href="#">Servicios</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Todo</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <!-- Filtros -->
+    <aside class="sidebar">
+      <h3>Filtros</h3>
+      <ul>
+        <li>Cantidad</li>
+        <li>Precio</li>
+        <li>Ubicación</li>
+      </ul>
+    </aside>
+
+    <!-- Productos -->
+    <section class="product-grid">
+        <!-- Card 1 -->
+        <div class="product-card">
+          <div class="rating">
+            <span>⭐ 4.8</span>
+            <span class="heart">🤍</span>
+          </div>
+          <div class="product-image">
+            <img class="card-img" src="/imgs/Product_1.jpg" alt="Modem wifi" />
+          </div>
+          <div class="product-info">
+            <h4 class="card-title">Cafe</h4>
+            <p class="card-price">$140.000</p>
+            <button>Comprar</button>
+          </div>
         </div>
+      
+        <!-- Card 2 -->
+        <div class="product-card">
+          <div class="rating">
+            <span>⭐ 4.8</span>
+            <span class="heart">🤍</span>
+          </div>
+          <div class="product-image">
+            <img class="card-img" src="/imgs/Product_2.jpg" alt="Modem wifi" />
+          </div>
+          <div class="product-info">
+            <h4 class="card-title">Panaderia X</h4>
+            <p class="card-price">$40.000</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="product-card">
+          <div class="rating">
+            <span>⭐ 4.8</span>
+            <span class="heart">🤍</span>
+          </div>
+          <div class="product-image">
+            <img class="card-img" src="/imgs/Product_3.jpg" alt="Modem wifi" />
+          </div>
+          <div class="product-info">
+            <h4 class="card-title">Fruver Y</h4>
+            <p class="card-price">$14.000</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="product-card">
+          <div class="rating">
+            <span>⭐ 4.8</span>
+            <span class="heart">🤍</span>
+          </div>
+          <div class="product-image">
+            <img class="card-img"src="/imgs/Product_4.jpg" alt="Modem wifi" />
+          </div>
+          <div class="product-info">
+            <h4 class="card-title">Servicio de limpieza</h4>
+            <p class="card-price">$8.000</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+      
+        <!-- Card 5 -->
+        <div class="product-card">
+          <div class="rating">
+            <span>⭐ 4.8</span>
+            <span class="heart">🤍</span>
+          </div>
+          <div class="product-image">
+            <img class="card-img" src="/imgs/Product_5.jpg " alt="Modem wifi" />
+          </div>
+          <div class="product-info">
+            <h4 class="card-title">Postres Z</h4>
+            <p class="card-price">$10.000</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+      
+        <!-- Card 6 -->
+        <div class="product-card">
+          <div class="rating">
+            <span>⭐ 4.8</span>
+            <span class="heart">🤍</span>
+          </div>
+          <div class="product-image">
+            <img class="card-img" src="/imgs/Product_6.jpg" alt="Modem wifi" />
+          </div>
+          <div class="product-info">
+            <h4 class="card-title">Maquillaje F</h4>
+            <p class="card-price">$180.000</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+      
+        <!-- Card 7 -->
+        <div class="product-card">
+          <div class="rating">
+            <span>⭐ 4.8</span>
+            <span class="heart">🤍</span>
+          </div>
+          <div class="product-image">
+            <img class="card-img" src="/imgs/Product_7.jpg" alt="Modem wifi" />
+          </div>
+          <div class="product-info">
+            <h4 class="card-title">Reparación T</h4>
+            <p class="card-price">$48.000</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+      
+        <!-- Card 8 -->
+        <div class="product-card">
+          <div class="rating">
+            <span>⭐ 4.8</span>
+            <span class="heart">🤍</span>
+          </div>
+          <div class="product-image">
+            <img class="card-img" src="/imgs/Product_8.jpg" alt="Modem wifi" />
+          </div>
+          <div class="product-info">
+            <h4 class="card-title">Ventas S</h4>
+            <p class="card-price">$60.000</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+      
+        <!-- Card 9 -->
+        <div class="product-card">
+          <div class="rating">
+            <span>⭐ 4.8</span>
+            <span class="heart">🤍</span>
+          </div>
+          <div class="product-image">
+            <img class="card-img" src="/imgs/Product_9.jpg" alt="Modem wifi" />
+          </div>
+          <div class="product-info">
+            <h4 class="card-title">Licores</h4>
+            <p class="card-price">$35.000</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+            <div class="rating">
+              <span>⭐ 4.8</span>
+              <span class="heart">🤍</span>
+            </div>
+            <div class="product-image">
+              <img class="card-img" src="/imgs/Product_10.jpg" alt="Modem wifi" />
+            </div>
+            <div class="product-info">
+              <h4 class="card-title">Papeleria</h4>
+              <p class="card-price">$3.000</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="rating">
+              <span>⭐ 4.8</span>
+              <span class="heart">🤍</span>
+            </div>
+            <div class="product-image">
+              <img class="card-img" src="/imgs/Product_11.jpg" alt="Modem wifi" />
+            </div>
+            <div class="product-info">
+              <h4 class="card-title">Jugueteria</h4>
+              <p class="card-price">$3.000</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="rating">
+              <span>⭐ 4.8</span>
+              <span class="heart">🤍</span>
+            </div>
+            <div class="product-image">
+              <img class="card-img" src="/imgs/Product_12.jpg" alt="Modem wifi" />
+            </div>
+            <div class="product-info">
+              <h4 class="card-title">Variedades V</h4>
+              <p class="card-price">$3.500</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="rating">
+              <span>⭐ 4.8</span>
+              <span class="heart">🤍</span>
+            </div>
+            <div class="product-image">
+              <img class="card-img" src="/imgs/Product_13.jpg" alt="Modem wifi" />
+            </div>
+            <div class="product-info">
+              <h4 class="card-title">Alta moda</h4>
+              <p class="card-price">$35.000</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="rating">
+              <span>⭐ 4.8</span>
+              <span class="heart">🤍</span>
+            </div>
+            <div class="product-image">
+              <img class="card-img" src="/imgs/Product_14.jpg" alt="Modem wifi" />
+            </div>
+            <div class="product-info">
+              <h4 class="card-title">Fragancias frescas</h4>
+              <p class="card-price">$45.000</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="rating">
+              <span>⭐ 4.8</span>
+              <span class="heart">🤍</span>
+            </div>
+            <div class="product-image">
+              <img class="card-img" src="/imgs/Product_15.jpg" alt="Modem wifi" /> 
+            </div>
+            <div class="product-info">
+              <h4 class="card-title">Accesorios A</h4>
+              <p class="card-price">$75.000</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="rating">
+              <span>⭐ 4.8</span>
+              <span class="heart">🤍</span>
+            </div>
+            <div class="product-image">
+              <img class="card-img" src="/imgs/Product_16.jpg" alt="Modem wifi" />
+            </div>
+            <div class="product-info">
+              <h4 class="card-title">Artesanías </h4>
+              <p class="card-price">$35.000</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="rating">
+              <span>⭐ 4.8</span>
+              <span class="heart">🤍</span>
+            </div>
+            <div class="product-image">
+              <img class="card-img" src="/imgs/Product_17.jpg" alt="Modem wifi" />
+            </div>
+            <div class="product-info">
+              <h4 class="card-title">Deportes</h4>
+              <p class="card-price">$50.000</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="rating">
+              <span>⭐ 4.8</span>
+              <span class="heart">🤍</span>
+            </div>
+            <div class="product-image">
+              <img class="card-img" src="/imgs/Product_18.jpg" alt="Modem wifi" />
+            </div>
+            <div class="product-info">
+              <h4 class="card-title">Bebidas</h4>
+              <p class="card-price">$35.000</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+      </section>      
+    </main>
+
+    <div class="product-modal" id="productModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-grid">
+          <!-- Imagen y título -->
+          <div class="modal-left">
+            <div class="rating">
+              <span>⭐ 4.8</span>
+              <span class="heart">🤍</span>
+            </div>
+            <div class="product-image">
+              <img id="modalImg" src="img/reloj.png" alt="Producto" />
+            </div>
+            <h3 id="modalTitle">Servicio de limpieza</h3>
+            <p class="price" id="modalPrice">$140.000 p h</p>
+            <button class="add-btn">Añadir</button>
+          </div>
+    
+          <!-- Características -->
+          <div class="modal-right">
+            <div class="details">
+              <div class="column">
+                <h4>Características</h4>
+                <ul>
+                  <li>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</li>
+                  <li>...</li>
+                </ul>
+              </div>
+              <div class="column">
+                <h4>Garantías</h4>
+                <ul>
+                  <li>Lorem Ipsum es simplemente el texto de relleno</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="comments">
+              <h4>Calificación y comentarios</h4>
+              <p><strong>4.0</strong></p>
+              <ul>
+                <li>Buen servicio, muy profesional.</li>
+                <li>Muy recomendado.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <footer>
-        <div class="pie_pag">
-            <a href="src/conocenos.html">Conócenos</a>
-            <a href="src/contactos.html">Contacto</a>
-            <a href="#">Soporte</a>
-            <a href="#">Términos y condiciones</a>
-            <a href="#">Índice del sitio</a>
-            <a href="#">Más</a>
-        </div>
-    </footer>
+
+    <script>
+        function openModalFromCard(card) {
+          // Obtener datos del producto
+          const imgSrc = card.querySelector(".card-img").src;
+          const title = card.querySelector(".card-title").textContent;
+          const price = card.querySelector(".card-price").textContent;
+      
+          // Asignar al modal
+          document.getElementById("modalImg").src = imgSrc;
+          document.getElementById("modalTitle").textContent = title;
+          document.getElementById("modalPrice").textContent = price;
+      
+          // Mostrar el modal
+          document.getElementById("productModal").style.display = "flex";
+        }
+      
+        function closeModal() {
+          document.getElementById("productModal").style.display = "none";
+        }
+      
+        // Evento para abrir modal al hacer clic en una tarjeta
+        document.querySelectorAll(".product-card").forEach(card => {
+          card.addEventListener("click", () => openModalFromCard(card));
+        });
+      </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 La Plaza Digital. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
