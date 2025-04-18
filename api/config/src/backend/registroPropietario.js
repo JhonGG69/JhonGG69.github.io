@@ -1,12 +1,9 @@
 import { supabase } from "./conexionSupabase.js";
 import bcrypt from "https://esm.sh/bcryptjs";
-import { validateName, validatePasswords, validateEmail,validatePassword } from "./validacionPropietario.js";
+import { validateName, validatePasswords, validateEmailPropietario,validatePassword } from "./validacion.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("propietario_form");
-    const emailError = document.getElementById("email_error");
-
-
 
     if (form) {
         form.addEventListener("submit", async function (event) {
@@ -23,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             } // Llamada a la función de validación del nombre
 
-            if (!(await validateEmail(email))){
+            if (!(await validateEmailPropietario(email))){
                 return;
             }
             
@@ -41,7 +38,11 @@ document.addEventListener("DOMContentLoaded", function () {
             // Insertar el nuevo propietario en la base de datos
             const { error: insertError } = await supabase
                 .from("propietario")
-                .insert([{ nombre: name, email: email, password: hashedPassword }]);
+                .insert([
+                    { nombre: name,
+                    email: email,
+                    password: hashedPassword 
+                    }]);
 
             if (insertError) {
                 throw new Error("Error guardando en la base de datos: " + insertError.message);
