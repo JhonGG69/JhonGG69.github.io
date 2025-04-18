@@ -127,7 +127,7 @@ import { supabase } from "./conexionSupabase.js";
             return false;
         }
 
-        if (password.length < 6) errors.push("al menos 6 caracteres");
+        if (password.length < 8) errors.push("al menos 8 caracteres");
         if (!/[A-Z]/.test(password)) errors.push("una mayúscula");
         if (!/\d/.test(password)) errors.push("un número");
         if (!/[^A-Za-z0-9]/.test(password)) errors.push("un carácter especial");
