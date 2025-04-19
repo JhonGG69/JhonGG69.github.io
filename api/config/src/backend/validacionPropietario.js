@@ -3,6 +3,7 @@ import { supabase } from "./conexionSupabase.js";
     const emailInput = document.getElementById("email");
     const passwordInput = document.getElementById("password");
     const confirmPasswordInput = document.getElementById("confirm_password");
+    let emailValidationId = 0;
 
     // VALIDAR NOMBRE
     export function validateName() {
@@ -39,7 +40,7 @@ import { supabase } from "./conexionSupabase.js";
     nameInput.addEventListener("blur", function () {
         const errorSpan = document.getElementById("name_error");
         if (nameInput.value === "") {
-            errorSpan.textContent = "El nombre no puede quedar vacío.";
+            errorSpan.textContent = "La contraseña no puede quedar vacía.";
             nameInput.style.borderColor = "red";
             errorSpan.style.color = "red";
         } else {
@@ -47,26 +48,36 @@ import { supabase } from "./conexionSupabase.js";
         }
     });
 
-    // VALIDAR EMAIL Propietario
-    export async function validateEmailPropietario() {
-        const errorSpan = document.getElementById("email_error");
-        const email = emailInput.value.trim().toLowerCase();
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    // Variable global para controlar validaciones asíncronas
 
-        if(emailInput.value === ""){
-            errorSpan.textContent = "El email no puede quedar vacio";
-            errorSpan.style.color = "red"
-            emailInput.style.borderColor = "red";
-            emailInput.focus();
-            return false;
-        }
-        
-        if (!regex.test(email)) {
-            errorSpan.textContent = "Correo inválido.";
-            emailInput.style.borderColor = "red";
-            errorSpan.style.color = "red";
-            return false;
-        }
+// VALIDAR EMAIL Propietario
+export async function validateEmailPropietario() {
+    const errorSpan = document.getElementById("email_error");
+    const email = emailInput.value.trim().toLowerCase();
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    // Incrementar ID y guardar para esta validación específica
+    const thisValidation = ++emailValidationId;
+
+    // Validación inicial
+    if(emailInput.value === "") {
+        errorSpan.textContent = "El email no puede quedar vacio";
+        errorSpan.style.color = "red";
+        emailInput.style.borderColor = "red";
+        return false;
+    }
+    
+    if (!regex.test(email)) {
+        errorSpan.textContent = "Correo inválido.";
+        emailInput.style.borderColor = "red";
+        errorSpan.style.color = "red";
+        return false;
+    }
+
+    try {
+        // Mostrar estado "verificando" mientras se consulta la base de datos
+        errorSpan.textContent = "Verificando...";
+        emailInput.style.borderColor = "orange";
 
         // Validación en la base de datos
         const { data, error } = await supabase
@@ -74,6 +85,12 @@ import { supabase } from "./conexionSupabase.js";
             .select("email")
             .eq("email", email);
 
+        // Si esta no es la validación más reciente, ignorar resultados
+        if (thisValidation !== emailValidationId) {
+            //console.log("Validación obsoleta, ignorando resultados");
+            return false;
+        }
+
         if (error) {
             errorSpan.textContent = "Error al verificar el correo.";
             emailInput.style.borderColor = "red";
@@ -81,102 +98,91 @@ import { supabase } from "./conexionSupabase.js";
             return false;
         }
 
-        if (data.length > 0) {
+        // Verificar si el correo ya está registrado
+        if (data && data.length > 0) {
             errorSpan.textContent = "Este correo ya está registrado.";
             emailInput.style.borderColor = "red";
             errorSpan.style.color = "red";
-            return false;
-        }
-
-        errorSpan.textContent = "";
-        emailInput.style.borderColor = "green";
-        return true;
-    }
-
-    emailInput.addEventListener("input", async function () {
-        if (emailInput.value !== "") {
-            await validateEmailPropietario();
-        } else {
-            document.getElementById("email_error").textContent = "";
-            emailInput.style.borderColor = "";
-        }
-    });
-
-    emailInput.addEventListener("blur", async function () {
-        const errorSpan = document.getElementById("email_error");
-        if (emailInput.value === "") {
-            errorSpan.textContent = "El email no puede quedar vacío.";
-            emailInput.style.borderColor = "red";
-            errorSpan.style.color = "red";
-        } else {
-            await validateEmailPropietario();
-        }
-    });
-// VALIDAR EMAIL Comprador
-    export async function validateEmailComprador() {
-        const errorSpan = document.getElementById("email_error");
-        const email = emailInput.value.trim().toLowerCase();
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
-        if(emailInput.value === ""){
-            errorSpan.textContent = "El email no puede quedar vacio";
-            errorSpan.style.color = "red"
-            emailInput.style.borderColor = "red";
-            emailInput.focus();
             return false;
         }
         
-        if (!regex.test(email)) {
-            errorSpan.textContent = "Correo inválido.";
-            emailInput.style.borderColor = "red";
-            errorSpan.style.color = "red";
-            return false;
-        }
-
-        // Validación en la base de datos
-        const { data, error } = await supabase
-            .from("comprador")
-            .select("email")
-            .eq("email", email);
-
-        if (error) {
-            errorSpan.textContent = "Error al verificar el correo.";
-            emailInput.style.borderColor = "red";
-            errorSpan.style.color = "red";
-            return false;
-        }
-
-        if (data.length > 0) {
-            errorSpan.textContent = "Este correo ya está registrado.";
-            emailInput.style.borderColor = "red";
-            errorSpan.style.color = "red";
-            return false;
-        }
-
+        // Email válido y no registrado
         errorSpan.textContent = "";
         emailInput.style.borderColor = "green";
         return true;
+    } catch (error) {
+        if (thisValidation !== emailValidationId) return false;
+        
+        errorSpan.textContent = "Error al verificar el correo.";
+        emailInput.style.borderColor = "red";
+        errorSpan.style.color = "red";
+        return false;
     }
+}
 
-    emailInput.addEventListener("input", async function () {
-        if (emailInput.value !== "") {
-            await validateEmailComprador();
-        } else {
-            document.getElementById("email_error").textContent = "";
-            emailInput.style.borderColor = "";
-        }
-    });
+emailInput.addEventListener("input", async function () {
+    if (emailInput.value !== "") {
+        // Resetear visualmente mientras se hace la validación
+        document.getElementById("email_error").textContent = "";
+        emailInput.style.borderColor = "";
+        // Realizar validación completa
+        await validateEmailPropietario();
+    } else {
+        document.getElementById("email_error").textContent = "";
+        emailInput.style.borderColor = "";
+    }
+});
 
-    emailInput.addEventListener("blur", async function () {
-        const errorSpan = document.getElementById("email_error");
-        if (emailInput.value === "") {
-            errorSpan.textContent = "El email no puede quedar vacío.";
-            emailInput.style.borderColor = "red";
-            errorSpan.style.color = "red";
-        } else {
-            await validateEmailComprador();
-        }
-    });
+emailInput.addEventListener("blur", async function () {
+    const errorSpan = document.getElementById("email_error");
+    if (emailInput.value === "") {
+        errorSpan.textContent = "El email no puede quedar vacío.";
+        emailInput.style.borderColor = "red";
+        errorSpan.style.color = "red";
+    } else {
+        await validateEmailPropietario();
+    }
+});
+
+   // Para el input, usar un debounce para no validar en cada pulsación
+let emailInputTimeout;
+emailInput.addEventListener("input", function() {
+    const errorSpan = document.getElementById("email_error");
+    
+    // Limpiar el timeout anterior si existe
+    if (emailInputTimeout) clearTimeout(emailInputTimeout);
+    
+    if (emailInput.value === "") {
+        errorSpan.textContent = "";
+        emailInput.style.borderColor = "";
+        return;
+    }
+    
+    // Establecer estado "verificando"
+    errorSpan.textContent = "Verificando...";
+    emailInput.style.borderColor = "orange";
+    
+    // Esperar 500ms después de que el usuario deje de escribir
+    emailInputTimeout = setTimeout(async () => {
+        await validateEmailPropietario(); // o validateEmailComprador
+    }, 500);
+});
+
+// Para el blur, validar siempre
+emailInput.addEventListener("blur", async function() {
+    const errorSpan = document.getElementById("email_error");
+    if (emailInput.value === "") {
+        errorSpan.textContent = "El email no puede quedar vacío.";
+        emailInput.style.borderColor = "red";
+        errorSpan.style.color = "red";
+    } else {
+        // Cancelar cualquier timeout pendiente
+        if (emailInputTimeout) clearTimeout(emailInputTimeout);
+        await validateEmailPropietario(); // o validateEmailComprador
+    }
+});
+
+    
         // VALIDAR CONTRASEÑA
         export async function validatePassword() {
             const password = passwordInput.value;

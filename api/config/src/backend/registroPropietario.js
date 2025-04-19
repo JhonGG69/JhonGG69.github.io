@@ -1,6 +1,6 @@
 import { supabase } from "./conexionSupabase.js";
 import bcrypt from "https://esm.sh/bcryptjs";
-import { validateName, validatePasswords, validateEmailPropietario,validatePassword } from "./validacion.js";
+import { validateName, validatePasswords, validateEmailPropietario,validatePassword } from "./validacionPropietario.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("propietario_form");
@@ -17,18 +17,26 @@ document.addEventListener("DOMContentLoaded", function () {
             // Validaciones finales antes de enviar
             
             if (!validateName(name)) {
+                const nameInput = document.getElementById("name");
+                nameInput.focus();
                 return;
             } // Llamada a la función de validación del nombre
 
             if (!(await validateEmailPropietario(email))){
+                const emailInput = document.getElementById("email");
+                emailInput.focus();
                 return;
             }
             
             if(!(await validatePassword(password))){
+                const passwordInput = document.getElementById("password");
+                passwordInput.focus();
                 return;
             }
             
             if(!validatePasswords(password,confirmPassword)){
+                const confirmPasswordInput = document.getElementById("confirm_password");
+                confirmPasswordInput.focus();
                 return;
             }
 
