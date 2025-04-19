@@ -1,10 +1,5 @@
-import { createClient } from "https://esm.sh/@supabase/supabase-js";
+import { supabase } from "./conexionSupabase.js";
 import bcrypt from "https://esm.sh/bcryptjs";
-
-// 🔹 Conectar con Supabase
-const SUPABASE_URL = "https://wszzuzsuciipkjggymmi.supabase.co";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indzenp1enN1Y2lpcGtqZ2d5bW1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2OTUzODcsImV4cCI6MjA1OTI3MTM4N30.k0_WUwnfXqBon3h9Tpr6D1VEo1SNV1J0qJ2lE6jPUSU";
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("login_form");
@@ -14,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
 
             // 🔹 Obtener datos del formulario
-            const email = document.getElementById("email").value;
+            const email = document.getElementById("email").value.trim().toLowerCase();
             const password = document.getElementById("password").value;
 
             try {
@@ -43,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // 🔹 Si no está en propietario, buscar en 'usuario_comprador'
                 const { data: comprador, error: errorComp } = await supabase
-                    .from("usuario_comprador")
+                    .from("comprador")
                     .select("*")
                     .eq("email", email)
                     .maybeSingle();

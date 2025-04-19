@@ -1,5 +1,4 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js"; 
-import bcrypt from "https://esm.sh/bcryptjs";
 
 // Conectar con Supabase
 const SUPABASE_URL = "https://wszzuzsuciipkjggymmi.supabase.co";
