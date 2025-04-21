@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Ventas</title>
+  <link rel="stylesheet" href="/css/Producto_Descripción.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../../../css/prueba.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="page-wrapper">
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">LPD</div>
+    <input type="text" class="search-bar" placeholder="Buscar productos..." />
+    <div class="icons">
+      <i class="cart">🛒</i>
+      <i class="user">👤</i>
+    </div>
+  </header>
+
+  <!-- Categorías -->
+  <nav class="navbar">
+    <a href="#">Productos</a>
+    <a href="#">Servicios</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Todo</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <!-- Filtros -->
+    <aside class="sidebar">
+      <h3>Filtros</h3>
+      <ul>
+        <li>Cantidad</li>
+        <li>Precio</li>
+        <li>Ubicación</li>
+      </ul>
+    </aside>
+
+    <div class="contenedor">
+      <h1>Mi Tienda Simple</h1>
+  
+      <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del producto" required />
+        <input type="number" id="precio" placeholder="Precio" required />
+        <input type="text" id="descripcion" placeholder="Descripción" required />
+        <button type="submit">Agregar Producto</button>
+      </form>
+  
+      <div id="productos" class="productos-grid"></div>
+  
+      <h2>Estadísticas</h2>
+      <div class="graficos">
+        <canvas id="graficoProductos" width="400" height="200"></canvas>
+        <canvas id="graficoComentarios" width="400" height="200"></canvas>
+      </div>
+    </div>
+
+  
+</div>
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 La Plaza Digital. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#">Términos y condiciones</a>
+      <a href="#">Política de privacidad</a>
+      <a href="#">Contacto</a>
+    </div>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="../../../models/scripts.js"></script>
+</body>
+</html>
