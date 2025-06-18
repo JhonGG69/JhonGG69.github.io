@@ -40,7 +40,7 @@ import { supabase } from "./conexionSupabase.js";
     nameInput.addEventListener("blur", function () {
         const errorSpan = document.getElementById("name_error");
         if (nameInput.value === "") {
-            errorSpan.textContent = "La contraseña no puede quedar vacía.";
+            errorSpan.textContent = "El nombre no puede quedar vacio.";
             nameInput.style.borderColor = "red";
             errorSpan.style.color = "red";
         } else {
