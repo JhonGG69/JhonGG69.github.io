@@ -7,27 +7,25 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f5f6f8;
-  color: #333;
+  background-color: #fefcf9;
+  color: #2b2b2b;
 }
 
 /* ==== HEADER ==== */
-.header {
+header {
+  font-family: 'KoHo-Medium';
+  background-color: #1A1A1A;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f2937;
-  color: white;
-  padding: 15px 40px;
-  margin: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 2px;
+  color: #E02828;
 }
 
 .nav-links {
@@ -37,23 +35,26 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: #ffff;
+  padding: 8px 15px;
   font-weight: 500;
   transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: #3b82f6;
+  color: #ffff;
 }
 
 .logout {
-  background: #3b82f6;
+  background: #E02828;
+  color: #1a1818;
   padding: 8px 15px;
   border-radius: 8px;
+  font-weight: 600;
 }
 
 .logout:hover {
-  background: #2563eb;
+  background: #E02828;
 }
 
 /* ==== PERFIL ==== */
@@ -68,10 +69,10 @@ body {
   flex: 1 1 300px;
   display: flex;
   align-items: center;
-  background: white;
+  background: #fffaf0;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img {
@@ -79,24 +80,25 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #3b82f6;
+  border: 3px solid #E02828;
   margin-right: 20px;
 }
 
 .profile-info h2 {
   font-size: 1.4rem;
+  color: #3b2f2f;
 }
 
 .about-card {
   flex: 2 1 400px;
-  background: white;
+  background: #fffaf0;
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .about-card h3 {
-  color: #3b82f6;
+  color: #E02828;
   margin-bottom: 10px;
 }
 
@@ -109,14 +111,14 @@ body {
 }
 
 .business-panel {
-  background: white;
+  background: #fffaf0;
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .business-panel h3 {
-  color: #3b82f6;
+  color: #E02828;
   margin-bottom: 15px;
 }
 
@@ -127,13 +129,16 @@ body {
 .business-item label {
   font-weight: 600;
   margin-right: 10px;
+  color: #3b2f2f;
 }
 
 select {
   padding: 8px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #c4b88a;
   margin-top: 8px;
+  background: #fff;
+  color: #2b2b2b;
 }
 
 /* ==== SWITCH ==== */
@@ -155,7 +160,7 @@ select {
   position: absolute;
   cursor: pointer;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #ccc;
+  background-color: #d4cfc1;
   transition: 0.4s;
   border-radius: 34px;
 }
@@ -173,7 +178,7 @@ select {
 }
 
 input:checked + .slider {
-  background-color: #3b82f6;
+  background-color: #E02828;
 }
 
 input:checked + .slider:before {
@@ -185,10 +190,10 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
-  background: white;
+  background: #fffaf0;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .gallery img {
@@ -199,6 +204,7 @@ input:checked + .slider:before {
   margin: auto;
   display: block;
   transition: 0.3s;
+  border: 2px solid #E02828;
 }
 
 .gallery img:hover {
@@ -207,26 +213,49 @@ input:checked + .slider:before {
 
 /* ==== FOOTER ==== */
 .footer {
-  background: #1f2937;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  border-radius: 16px;
-  margin: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background-color: #0A0A0A;
+  color: #D6D6D6;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "KoHo-Medium";
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
 }
 
-.footer a {
-  color: white;
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #D6D6D6;
+  margin: 0 10px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
-.footer a:hover {
-  color: #3b82f6;
+.footer-links a:hover {
+  color: #D6D6D6;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #D6D6D6;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #D6D6D6;
+  transform: scale(1.2);
 }
 
 /* ==== RESPONSIVE ==== */
