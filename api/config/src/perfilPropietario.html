@@ -1,103 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PerfilP</title>
-    <link rel="stylesheet" href="../../../css/StylePP.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LPD - Perfil de Negocio</title>
+  <link rel="stylesheet" href="/css/StylePP.css" />
 </head>
 <body>
-    <header class="header">
-            <div class="header_tittle">
-                <h2>L P D</h2>
-            </div>
-            <nav class="header_links">
-                <a class="itemlink" href="Categorias.html">Categorias</a> |&nbsp;
-                <a class="itemlink" href="/api/config/src/Comentarios.html">Comentarios</a> 
-                <a class="cerar_sesion" href="../../../index.html">Cerrar sesión</a> 
-            </nav> 
-    </header>
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">L P D</div>
+    <nav class="nav-links">
+      <a href="#">Categorías</a>
+      <a href="#">Comentarios</a>
+      <a href="#" class="logout">Cerrar sesión</a>
+    </nav>
+  </header>
 
-    <div class="flexbox">
-        <div class="flex-item_profile">
-            <img class="div_profileimg" src="/imgs/Profile.jpg"Profile img" alt="Imagen de perfil">
-            <div class="profile-info">
-                <h2>Nombre propietario</h2>
-                <p class="phone_number">+57 32424442</p>
-                <p class="email">correo@email.com</p>
-            </div>
-        </div>
-        <div class="flex-item">
-            <h4>Acerca de mi</h4>
-            <p>Lorem ipsum dolor sitdoloremque optio! Suscipit porro quasi, distinctio laboriosam eaque facilis tempore amet maiores, iure repudiandae explicabo asperiores at!</p>
-        </div>
+  <!-- Perfil principal -->
+  <section class="profile-section">
+    <div class="profile-card">
+      <img src="/imgs/Profile.jpg" alt="Foto de perfil" class="profile-img" />
+      <div class="profile-info">
+        <h2>Nombre del Propietario</h2>
+        <p>📞 +57 324 244 442</p>
+        <p>✉️ correo@email.com</p>
+      </div>
     </div>
 
-    <div class="mybusiness">
-        <div class="business">
-            <h3>Mis negocios</h3>
-                <label for="Opcion">Negocio #1</label>
-                    <label class="switch">
-                        <input type="checkbox" id="toggleSwitch"> 
-                            <span class="slider"></span>
-                    </label>
-                        <select class="opciones" name="Opciones" id="Opciones" aria-placeholder="Categorias">
-                            <option value="" disabled selected>Categorias</option>
-                            <option value="Opcion 1">Tecnologia</option>
-                            <option value="Opcion 2">Alimentos</option>
-                            <option value="Opcion 3">Moda</option>
-                            <option value="Opcion 4">Belleza</option>
-                    </select> 
-            <label for="Opcion2">Negocio #2</label>
-                <label class="switch">
-                    <input type="checkbox" id="toggleSwitch"> 
-                        <span class="slider"></span>
-                </label>
-                <select  class="opciones" name="opciones2" id="Opciones2">
-                    <option value="" disabled selected>Categorias</option>
-                    <option value="Opcion 1">Tecnologia</option>
-                    <option value="Opcion 2">Alimentos</option>
-                    <option value="Opcion 3">Moda</option>
-                    <option value="Opcion 4">Belleza</option>
-                </select>
-                <label for="Opcion3">Negocio #3</label>
-                    <label class="switch">
-                        <input type="checkbox" id="toggleSwitch"> 
-                            <span class="slider"></span>
-                    </label>
-                <select class="opciones" name="opciones3" id="Opciones3">
-                    <option value="" disabled selected>Categorias</option>
-                    <option value="Opcion 1">Tecnologia</option>
-                    <option value="Opcion 2">Alimentos</option>
-                    <option value="Opcion 3">Moda</option>
-                    <option value="Opcion 4">Belleza</option>
-                </select>          
-        </div>
-<div class="bloc_business">
-        <div class="business_img">
-            <img src="/imgs/negocio.png" alt="Imagenes negocio">
-        </div>
-        <div class="business_img">
-            <img src="/imgs/negocio.png" alt="Imagenes negocio">
-        </div>
-        <div class="business_img">
-            <img src="/imgs/negocio.png" alt="Imagenes negocio">
-        </div>
-        <div class="business_img">
-            <img src="/imgs/negocio.png" alt="Imagenes negocio">
-        </div>
+    <div class="about-card">
+      <h3>Acerca de mí</h3>
+      <p>
+        Soy un emprendedor apasionado por el crecimiento digital y la innovación. 
+        Me encanta ayudar a los negocios locales a tener más presencia en línea.
+      </p>
     </div>
-</div>
-            
-    <footer class="footer">
-        <nav>
-            <a href="conocenos.html">Conócenos</a>
-            <a href="contactos.html">Contacto</a>
-            <a href="#">Soporte</a> 
-            <a  href="#">Terminos y condiciones</a> 
-            <a  href="#">Soporte</a> 
-            <a  href="#">Indice de sitio</a>            <a class="nav" href="#">Mas</a> 
-        </nav>
-    </footer>
+  </section>
+
+  <!-- Sección de negocios -->
+  <section class="business-section">
+    <div class="business-panel">
+      <h3>Mis Negocios</h3>
+
+      <div class="business-item">
+        <label>Negocio #1</label>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <select>
+          <option disabled selected>Categorías</option>
+          <option>Tecnología</option>
+          <option>Alimentos</option>
+          <option>Moda</option>
+          <option>Belleza</option>
+        </select>
+      </div>
+
+      <div class="business-item">
+        <label>Negocio #2</label>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <select>
+          <option disabled selected>Categorías</option>
+          <option>Tecnología</option>
+          <option>Alimentos</option>
+          <option>Moda</option>
+          <option>Belleza</option>
+        </select>
+      </div>
+
+      <div class="business-item">
+        <label>Negocio #3</label>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <select>
+          <option disabled selected>Categorías</option>
+          <option>Tecnología</option>
+          <option>Alimentos</option>
+          <option>Moda</option>
+          <option>Belleza</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <img src="/imgs/negocio.png" alt="Negocio 1" />
+      <img src="/imgs/negocio.png" alt="Negocio 2" />
+      <img src="/imgs/negocio.png" alt="Negocio 3" />
+      <img src="/imgs/negocio.png" alt="Negocio 4" />
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <a href="#">Conócenos</a>
+    <a href="#">Contacto</a>
+    <a href="#">Soporte</a>
+    <a href="#">Términos y condiciones</a>
+    <a href="#">Índice del sitio</a>
+  </footer>
 </body>
 </html>
