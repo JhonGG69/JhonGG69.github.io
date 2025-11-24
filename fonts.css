@@ -5,6 +5,15 @@
 }
 
 @font-face {
+  font-family: "Pathway Gothic One", sans-serif;
+  src: url("fonts/PathwayGothicOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+}
+
+@font-face {
     font-family: "ProtestStrike-Regular";
     src: url("fonts/ProtestStrike-Regular.ttf") format("truetype");
     font-weight: 400px;
