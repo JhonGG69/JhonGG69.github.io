@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const { error: insertError } = await supabase
                 .from("propietario")
                 .insert([
-                    { nombre: name,
+                    { name: name,
                     email: email,
                     password: hashedPassword 
                     }]);
