@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 .from("comprador")
                 .insert([
                     {
-                        nombre: name,
+                        name: name,
                         email: email,
                         password: hashedPassword,
                     }
